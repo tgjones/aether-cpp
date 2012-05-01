@@ -13,7 +13,10 @@
 		CD6815D215503EE60098DA3A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD6815D015503EE60098DA3A /* Credits.rtf */; };
 		CD6815D515503EE60098DA3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6815D415503EE60098DA3A /* AppDelegate.m */; };
 		CD6815D815503EE60098DA3A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6815D615503EE60098DA3A /* MainMenu.xib */; };
-		CDA9CE9615503F8400135971 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9CE9515503F8400135971 /* AppController.m */; };
+		CDA48C4D15504709008D89AE /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C4C15504709008D89AE /* Geometry.cpp */; };
+		CDA48C5115504A73008D89AE /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C5015504A73008D89AE /* Plane.cpp */; };
+		CDA48C5715505AF9008D89AE /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C5615505AF9008D89AE /* Sphere.cpp */; };
+		CDA9CE9615503F8400135971 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDA9CE9515503F8400135971 /* AppController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +33,16 @@
 		CD6815D315503EE60098DA3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD6815D415503EE60098DA3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD6815D715503EE60098DA3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CDA48C4C15504709008D89AE /* Geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Geometry.cpp; sourceTree = "<group>"; };
+		CDA48C4E1550471C008D89AE /* Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		CDA48C5015504A73008D89AE /* Plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plane.cpp; sourceTree = "<group>"; };
+		CDA48C5215504BC1008D89AE /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		CDA48C5315504D2F008D89AE /* ShadeRec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadeRec.h; sourceTree = "<group>"; };
+		CDA48C5415504F86008D89AE /* Plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
+		CDA48C5515505A57008D89AE /* Sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
+		CDA48C5615505AF9008D89AE /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere.cpp; sourceTree = "<group>"; };
 		CDA9CE9415503F8400135971 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		CDA9CE9515503F8400135971 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		CDA9CE9515503F8400135971 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +60,7 @@
 		CD6815B215503EE50098DA3A = {
 			isa = PBXGroup;
 			children = (
+				CDA48C4A155046CC008D89AE /* Source */,
 				CD6815C715503EE50098DA3A /* Aether */,
 				CD6815C015503EE50098DA3A /* Frameworks */,
 				CD6815BE15503EE50098DA3A /* Products */,
@@ -86,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CDA9CE9415503F8400135971 /* AppController.h */,
-				CDA9CE9515503F8400135971 /* AppController.m */,
+				CDA9CE9515503F8400135971 /* AppController.mm */,
 				CD6815D315503EE60098DA3A /* AppDelegate.h */,
 				CD6815D415503EE60098DA3A /* AppDelegate.m */,
 				CD6815D615503EE60098DA3A /* MainMenu.xib */,
@@ -105,6 +117,29 @@
 				CD6815D015503EE60098DA3A /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDA48C4A155046CC008D89AE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CDA48C4C15504709008D89AE /* Geometry.cpp */,
+				CDA48C4E1550471C008D89AE /* Geometry.h */,
+				CDA48C5315504D2F008D89AE /* ShadeRec.h */,
+				CDA48C4F15504A54008D89AE /* Shapes */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		CDA48C4F15504A54008D89AE /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				CDA48C5015504A73008D89AE /* Plane.cpp */,
+				CDA48C5415504F86008D89AE /* Plane.h */,
+				CDA48C5215504BC1008D89AE /* Shape.h */,
+				CDA48C5615505AF9008D89AE /* Sphere.cpp */,
+				CDA48C5515505A57008D89AE /* Sphere.h */,
+			);
+			name = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +207,10 @@
 			files = (
 				CD6815CE15503EE50098DA3A /* main.m in Sources */,
 				CD6815D515503EE60098DA3A /* AppDelegate.m in Sources */,
-				CDA9CE9615503F8400135971 /* AppController.m in Sources */,
+				CDA9CE9615503F8400135971 /* AppController.mm in Sources */,
+				CDA48C4D15504709008D89AE /* Geometry.cpp in Sources */,
+				CDA48C5115504A73008D89AE /* Plane.cpp in Sources */,
+				CDA48C5715505AF9008D89AE /* Sphere.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +294,8 @@
 		CD6815DC15503EE60098DA3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aether/Aether-Prefix.pch";
 				INFOPLIST_FILE = "Aether/Aether-Info.plist";
@@ -267,6 +307,8 @@
 		CD6815DD15503EE60098DA3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aether/Aether-Prefix.pch";
 				INFOPLIST_FILE = "Aether/Aether-Info.plist";

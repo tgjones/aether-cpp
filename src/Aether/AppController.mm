@@ -7,6 +7,10 @@
 //
 
 #import "AppController.h"
+#import "Geometry.h"
+#import "Shape.h"
+#import "Plane.h"
+#import "ShadeRec.h"
 
 #define SAMPLE_SIZE 8
 #define SAMPLE_NUMBER 3
@@ -17,8 +21,8 @@
 - (IBAction)render:(id)sender {
 	CGSize size = [imageView bounds].size;
 	int pixelWidth = size.width, pixelHeight = size.height;
-	unsigned char* bitmapData = (void*) calloc(pixelWidth * pixelHeight * PIXEL_BYTES,
-											   sizeof(unsigned char));
+	unsigned char* bitmapData = (unsigned char*) calloc(pixelWidth * pixelHeight * PIXEL_BYTES,
+														sizeof(unsigned char));
 	
 	for (uint row = 0; row < pixelHeight; row++)
 	{
