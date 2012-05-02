@@ -15,14 +15,16 @@
 class Plane : Shape {
 public:
 	// Constructor
-	Plane(const Point3D p, const Normal3D& n);
+	Plane(const Point3D point, const Normal3D& normal)
+		: _point(point), _normal(normal)
+	{}
 	
 	virtual bool hit(const Ray3D& ray, double& tmin, ShadeRec& sr) const;
 	
 private:
 	// Private data
-	Point3D point;
-	Normal3D normal;
+	Point3D _point;
+	Normal3D _normal;
 	static const double kEpsilon;
 };
 

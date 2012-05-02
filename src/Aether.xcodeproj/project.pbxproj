@@ -13,19 +13,20 @@
 		CD6815D215503EE60098DA3A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD6815D015503EE60098DA3A /* Credits.rtf */; };
 		CD6815D515503EE60098DA3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6815D415503EE60098DA3A /* AppDelegate.m */; };
 		CD6815D815503EE60098DA3A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6815D615503EE60098DA3A /* MainMenu.xib */; };
-		CD9CCA88155195F00015545E /* plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9CCA83155195F00015545E /* plane.cpp */; };
-		CD9CCA89155195F00015545E /* sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9CCA86155195F00015545E /* sphere.cpp */; };
 		CD9CCA93155196860015545E /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9CCA92155196860015545E /* gtest.framework */; };
-		CD9CCA97155198050015545E /* vector3dtests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9CCA96155198050015545E /* vector3dtests.cpp */; };
-		CDA8213715519C20002C6BCB /* sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9CCA86155195F00015545E /* sphere.cpp */; };
-		CDA821411551A09C002C6BCB /* spheretests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821401551A09C002C6BCB /* spheretests.cpp */; };
 		CDA821431551A0A8002C6BCB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821421551A0A8002C6BCB /* main.cpp */; };
-		CDA821481551A64C002C6BCB /* vector3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821471551A64C002C6BCB /* vector3d.cpp */; };
-		CDA821491551A64C002C6BCB /* vector3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821471551A64C002C6BCB /* vector3d.cpp */; };
-		CDA8214E1551A6D6002C6BCB /* point3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA8214D1551A6D6002C6BCB /* point3d.cpp */; };
-		CDA8214F1551A6D6002C6BCB /* point3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA8214D1551A6D6002C6BCB /* point3d.cpp */; };
-		CDA821511551A74F002C6BCB /* normal3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821501551A74F002C6BCB /* normal3d.cpp */; };
-		CDA821521551A74F002C6BCB /* normal3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821501551A74F002C6BCB /* normal3d.cpp */; };
+		CDA821601551AE16002C6BCB /* Normal3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821591551AE16002C6BCB /* Normal3D.cpp */; };
+		CDA821611551AE16002C6BCB /* Normal3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821591551AE16002C6BCB /* Normal3D.cpp */; };
+		CDA821621551AE16002C6BCB /* Point3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA8215B1551AE16002C6BCB /* Point3D.cpp */; };
+		CDA821631551AE16002C6BCB /* Point3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA8215B1551AE16002C6BCB /* Point3D.cpp */; };
+		CDA821641551AE16002C6BCB /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA8215E1551AE16002C6BCB /* Vector3D.cpp */; };
+		CDA821651551AE16002C6BCB /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA8215E1551AE16002C6BCB /* Vector3D.cpp */; };
+		CDA8216B1551AE2F002C6BCB /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821661551AE2F002C6BCB /* Plane.cpp */; };
+		CDA8216C1551AE2F002C6BCB /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821661551AE2F002C6BCB /* Plane.cpp */; };
+		CDA8216D1551AE2F002C6BCB /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821691551AE2F002C6BCB /* Sphere.cpp */; };
+		CDA8216E1551AE2F002C6BCB /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821691551AE2F002C6BCB /* Sphere.cpp */; };
+		CDA821701551AE8C002C6BCB /* SphereTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA8216F1551AE8C002C6BCB /* SphereTests.cpp */; };
+		CDA821721551AEB6002C6BCB /* Vector3DTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821711551AEB6002C6BCB /* Vector3DTests.cpp */; };
 		CDA9CE9615503F8400135971 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDA9CE9515503F8400135971 /* AppController.mm */; };
 /* End PBXBuildFile section */
 
@@ -55,27 +56,27 @@
 		CD6815D315503EE60098DA3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD6815D415503EE60098DA3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD6815D715503EE60098DA3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		CD9CCA83155195F00015545E /* plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = plane.cpp; path = engine/shapes/plane.cpp; sourceTree = SOURCE_ROOT; };
-		CD9CCA84155195F00015545E /* plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = plane.h; path = engine/shapes/plane.h; sourceTree = SOURCE_ROOT; };
-		CD9CCA85155195F00015545E /* shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shape.h; path = engine/shapes/shape.h; sourceTree = SOURCE_ROOT; };
-		CD9CCA86155195F00015545E /* sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sphere.cpp; path = engine/shapes/sphere.cpp; sourceTree = SOURCE_ROOT; };
-		CD9CCA87155195F00015545E /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sphere.h; path = engine/shapes/sphere.h; sourceTree = SOURCE_ROOT; };
-		CD9CCA8D1551961D0015545E /* shaderec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shaderec.h; path = engine/shaderec.h; sourceTree = SOURCE_ROOT; };
+		CD9CCA8D1551961D0015545E /* ShadeRec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShadeRec.h; path = engine/ShadeRec.h; sourceTree = SOURCE_ROOT; };
 		CD9CCA92155196860015545E /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = tests/3rdparty/gtest.framework; sourceTree = "<group>"; };
-		CD9CCA96155198050015545E /* vector3dtests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector3dtests.cpp; sourceTree = "<group>"; };
 		CDA48C8C1550D728008D89AE /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDA821401551A09C002C6BCB /* spheretests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = spheretests.cpp; path = tests/shapes/spheretests.cpp; sourceTree = SOURCE_ROOT; };
 		CDA821421551A0A8002C6BCB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		CDA821441551A0C6002C6BCB /* tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tests.h; sourceTree = "<group>"; };
-		CDA821461551A613002C6BCB /* vector3d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vector3d.h; sourceTree = "<group>"; };
-		CDA821471551A64C002C6BCB /* vector3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector3d.cpp; sourceTree = "<group>"; };
-		CDA8214A1551A693002C6BCB /* point3d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = point3d.h; sourceTree = "<group>"; };
-		CDA8214B1551A69C002C6BCB /* normal3d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = normal3d.h; sourceTree = "<group>"; };
-		CDA8214C1551A6A3002C6BCB /* ray3d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ray3d.h; sourceTree = "<group>"; };
-		CDA8214D1551A6D6002C6BCB /* point3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point3d.cpp; sourceTree = "<group>"; };
-		CDA821501551A74F002C6BCB /* normal3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = normal3d.cpp; sourceTree = "<group>"; };
-		CDA821531551A7A3002C6BCB /* color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = color.h; sourceTree = "<group>"; };
-		CDA821541551A81B002C6BCB /* math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = math.h; sourceTree = "<group>"; };
+		CDA821441551A0C6002C6BCB /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
+		CDA821531551A7A3002C6BCB /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		CDA821581551AE16002C6BCB /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Math.h; path = engine/Math.h; sourceTree = SOURCE_ROOT; };
+		CDA821591551AE16002C6BCB /* Normal3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Normal3D.cpp; path = engine/Normal3D.cpp; sourceTree = SOURCE_ROOT; };
+		CDA8215A1551AE16002C6BCB /* Normal3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Normal3D.h; path = engine/Normal3D.h; sourceTree = SOURCE_ROOT; };
+		CDA8215B1551AE16002C6BCB /* Point3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Point3D.cpp; path = engine/Point3D.cpp; sourceTree = SOURCE_ROOT; };
+		CDA8215C1551AE16002C6BCB /* Point3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Point3D.h; path = engine/Point3D.h; sourceTree = SOURCE_ROOT; };
+		CDA8215D1551AE16002C6BCB /* Ray3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ray3D.h; path = engine/Ray3D.h; sourceTree = SOURCE_ROOT; };
+		CDA8215E1551AE16002C6BCB /* Vector3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector3D.cpp; path = engine/Vector3D.cpp; sourceTree = SOURCE_ROOT; };
+		CDA8215F1551AE16002C6BCB /* Vector3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector3D.h; path = engine/Vector3D.h; sourceTree = SOURCE_ROOT; };
+		CDA821661551AE2F002C6BCB /* Plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Plane.cpp; path = engine/Plane.cpp; sourceTree = SOURCE_ROOT; };
+		CDA821671551AE2F002C6BCB /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plane.h; path = engine/Plane.h; sourceTree = SOURCE_ROOT; };
+		CDA821681551AE2F002C6BCB /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shape.h; path = engine/Shape.h; sourceTree = SOURCE_ROOT; };
+		CDA821691551AE2F002C6BCB /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sphere.cpp; path = engine/Sphere.cpp; sourceTree = SOURCE_ROOT; };
+		CDA8216A1551AE2F002C6BCB /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sphere.h; path = engine/Sphere.h; sourceTree = SOURCE_ROOT; };
+		CDA8216F1551AE8C002C6BCB /* SphereTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SphereTests.cpp; path = tests/SphereTests.cpp; sourceTree = SOURCE_ROOT; };
+		CDA821711551AEB6002C6BCB /* Vector3DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector3DTests.cpp; path = tests/Vector3DTests.cpp; sourceTree = SOURCE_ROOT; };
 		CDA9CE9415503F8400135971 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		CDA9CE9515503F8400135971 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,35 +167,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CD9CCA81155194DA0015545E /* shapes */ = {
+		CD9CCA81155194DA0015545E /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				CD9CCA83155195F00015545E /* plane.cpp */,
-				CD9CCA84155195F00015545E /* plane.h */,
-				CD9CCA85155195F00015545E /* shape.h */,
-				CD9CCA86155195F00015545E /* sphere.cpp */,
-				CD9CCA87155195F00015545E /* sphere.h */,
+				CDA821661551AE2F002C6BCB /* Plane.cpp */,
+				CDA821671551AE2F002C6BCB /* Plane.h */,
+				CDA821681551AE2F002C6BCB /* Shape.h */,
+				CDA821691551AE2F002C6BCB /* Sphere.cpp */,
+				CDA8216A1551AE2F002C6BCB /* Sphere.h */,
 			);
-			name = shapes;
-			path = engine/shapes;
-			sourceTree = SOURCE_ROOT;
+			name = Shapes;
+			path = shapes;
+			sourceTree = "<group>";
 		};
-		CD9CCA95155197E80015545E /* math */ = {
+		CD9CCA95155197E80015545E /* Math */ = {
 			isa = PBXGroup;
 			children = (
-				CD9CCA96155198050015545E /* vector3dtests.cpp */,
+				CDA821711551AEB6002C6BCB /* Vector3DTests.cpp */,
 			);
-			name = math;
-			path = tests/math;
-			sourceTree = SOURCE_ROOT;
+			name = Math;
+			path = math;
+			sourceTree = "<group>";
 		};
 		CDA48C4A155046CC008D89AE /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				CDA821451551A5F7002C6BCB /* math */,
-				CD9CCA81155194DA0015545E /* shapes */,
-				CD9CCA8D1551961D0015545E /* shaderec.h */,
-				CDA821531551A7A3002C6BCB /* color.h */,
+				CDA821451551A5F7002C6BCB /* Math */,
+				CD9CCA81155194DA0015545E /* Shapes */,
+				CD9CCA8D1551961D0015545E /* ShadeRec.h */,
+				CDA821531551A7A3002C6BCB /* Color.h */,
 			);
 			name = Engine;
 			path = engine;
@@ -203,39 +204,39 @@
 		CDA48C6E1550D5DF008D89AE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				CDA82133155199F1002C6BCB /* shapes */,
-				CD9CCA95155197E80015545E /* math */,
+				CDA82133155199F1002C6BCB /* Shapes */,
+				CD9CCA95155197E80015545E /* Math */,
 				CDA821421551A0A8002C6BCB /* main.cpp */,
-				CDA821441551A0C6002C6BCB /* tests.h */,
+				CDA821441551A0C6002C6BCB /* Tests.h */,
 			);
 			name = Tests;
 			path = tests;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		CDA82133155199F1002C6BCB /* shapes */ = {
+		CDA82133155199F1002C6BCB /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				CDA821401551A09C002C6BCB /* spheretests.cpp */,
+				CDA8216F1551AE8C002C6BCB /* SphereTests.cpp */,
 			);
-			name = shapes;
+			name = Shapes;
 			path = tests/shapes;
 			sourceTree = "<group>";
 		};
-		CDA821451551A5F7002C6BCB /* math */ = {
+		CDA821451551A5F7002C6BCB /* Math */ = {
 			isa = PBXGroup;
 			children = (
-				CDA821471551A64C002C6BCB /* vector3d.cpp */,
-				CDA821461551A613002C6BCB /* vector3d.h */,
-				CDA8214D1551A6D6002C6BCB /* point3d.cpp */,
-				CDA8214A1551A693002C6BCB /* point3d.h */,
-				CDA821501551A74F002C6BCB /* normal3d.cpp */,
-				CDA8214B1551A69C002C6BCB /* normal3d.h */,
-				CDA8214C1551A6A3002C6BCB /* ray3d.h */,
-				CDA821541551A81B002C6BCB /* math.h */,
+				CDA821581551AE16002C6BCB /* Math.h */,
+				CDA821591551AE16002C6BCB /* Normal3D.cpp */,
+				CDA8215A1551AE16002C6BCB /* Normal3D.h */,
+				CDA8215B1551AE16002C6BCB /* Point3D.cpp */,
+				CDA8215C1551AE16002C6BCB /* Point3D.h */,
+				CDA8215D1551AE16002C6BCB /* Ray3D.h */,
+				CDA8215E1551AE16002C6BCB /* Vector3D.cpp */,
+				CDA8215F1551AE16002C6BCB /* Vector3D.h */,
 			);
-			name = math;
-			path = engine/math;
-			sourceTree = SOURCE_ROOT;
+			name = Math;
+			path = math;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -321,11 +322,11 @@
 				CD6815CE15503EE50098DA3A /* main.m in Sources */,
 				CD6815D515503EE60098DA3A /* AppDelegate.m in Sources */,
 				CDA9CE9615503F8400135971 /* AppController.mm in Sources */,
-				CD9CCA88155195F00015545E /* plane.cpp in Sources */,
-				CD9CCA89155195F00015545E /* sphere.cpp in Sources */,
-				CDA821481551A64C002C6BCB /* vector3d.cpp in Sources */,
-				CDA8214E1551A6D6002C6BCB /* point3d.cpp in Sources */,
-				CDA821511551A74F002C6BCB /* normal3d.cpp in Sources */,
+				CDA821601551AE16002C6BCB /* Normal3D.cpp in Sources */,
+				CDA821621551AE16002C6BCB /* Point3D.cpp in Sources */,
+				CDA821641551AE16002C6BCB /* Vector3D.cpp in Sources */,
+				CDA8216B1551AE2F002C6BCB /* Plane.cpp in Sources */,
+				CDA8216D1551AE2F002C6BCB /* Sphere.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,13 +334,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD9CCA97155198050015545E /* vector3dtests.cpp in Sources */,
-				CDA8213715519C20002C6BCB /* sphere.cpp in Sources */,
-				CDA821411551A09C002C6BCB /* spheretests.cpp in Sources */,
 				CDA821431551A0A8002C6BCB /* main.cpp in Sources */,
-				CDA821491551A64C002C6BCB /* vector3d.cpp in Sources */,
-				CDA8214F1551A6D6002C6BCB /* point3d.cpp in Sources */,
-				CDA821521551A74F002C6BCB /* normal3d.cpp in Sources */,
+				CDA821611551AE16002C6BCB /* Normal3D.cpp in Sources */,
+				CDA821631551AE16002C6BCB /* Point3D.cpp in Sources */,
+				CDA821651551AE16002C6BCB /* Vector3D.cpp in Sources */,
+				CDA8216C1551AE2F002C6BCB /* Plane.cpp in Sources */,
+				CDA8216E1551AE2F002C6BCB /* Sphere.cpp in Sources */,
+				CDA821701551AE8C002C6BCB /* SphereTests.cpp in Sources */,
+				CDA821721551AEB6002C6BCB /* Vector3DTests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
