@@ -9,8 +9,8 @@
 #ifndef Aether_Plane_h
 #define Aether_Plane_h
 
-#include "Shape.h"
-#include "Geometry.h"
+#include "shape.h"
+#include "math.h"
 
 class Plane : Shape {
 public:

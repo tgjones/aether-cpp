@@ -31,7 +31,21 @@ Sphere::hit(const Ray3D& ray, double& tmin, ShadeRec& sr) const {
 	double denom = 2.0 * a;
 	double t = (-b - e) / denom; // smaller root
 	
-	// TODO
+	if (t > kEpsilon) {
+		tmin = t;
+		sr.normal = (temp + t * ray.direction) / _radius;
+		sr.localHitPoint = ray.origin + t * ray.direction;
+		return true;
+	} 
+	
+	t = (-b + e) / denom; // larger root
+	
+	if (t > kEpsilon) {
+		tmin = t;
+		sr.normal = (temp + t * ray.direction) / _radius;
+		sr.localHitPoint = ray.origin + t * ray.direction;
+		return true;
+	} 
 	
 	return false;
 }

@@ -9,13 +9,15 @@
 #ifndef Aether_ShadeRec_h
 #define Aether_ShadeRec_h
 
-#include "Geometry.h"
+#include "math.h"
+#include "color.h"
 class World;
 
 class ShadeRec {
 public:
 	// Constructor
 	//ShadeRec(World& wr) : w(wr) { }
+	ShadeRec() { }
 	
 	// Public data
 	bool hitAnObject = false;

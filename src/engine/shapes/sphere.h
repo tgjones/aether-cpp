@@ -10,7 +10,7 @@
 #define Aether_Sphere_h
 
 #include "shape.h"
-#include "geometry.h"
+#include "math.h"
 
 class Sphere : Shape {
 public:

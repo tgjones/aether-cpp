@@ -9,8 +9,8 @@
 #ifndef Aether_Shape_h
 #define Aether_Shape_h
 
-#include "Geometry.h"
-#include "ShadeRec.h"
+#include "math.h"
+#include "shaderec.h"
 
 class Shape {
 public:
