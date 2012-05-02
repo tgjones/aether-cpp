@@ -16,7 +16,7 @@
                BlueprintIdentifier = "CDA48C8B1550D728008D89AE"
                BuildableName = "Test"
                BlueprintName = "Test"
-               ReferencedContainer = "container:Aether.xcodeproj">
+               ReferencedContainer = "container:aether.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,7 +34,7 @@
             BlueprintIdentifier = "CDA48C8B1550D728008D89AE"
             BuildableName = "Test"
             BlueprintName = "Test"
-            ReferencedContainer = "container:Aether.xcodeproj">
+            ReferencedContainer = "container:aether.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,13 +53,13 @@
             BlueprintIdentifier = "CDA48C8B1550D728008D89AE"
             BuildableName = "Test"
             BlueprintName = "Test"
-            ReferencedContainer = "container:Aether.xcodeproj">
+            ReferencedContainer = "container:aether.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "DYLD_FRAMEWORK_PATH"
-            value = "$(SRCROOT)/../tools"
+            value = "$(SRCROOT)/tests/3rdparty"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "CDA48C8B1550D728008D89AE"
             BuildableName = "Test"
             BlueprintName = "Test"
-            ReferencedContainer = "container:Aether.xcodeproj">
+            ReferencedContainer = "container:aether.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -13,12 +13,12 @@
 		CD6815D215503EE60098DA3A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD6815D015503EE60098DA3A /* Credits.rtf */; };
 		CD6815D515503EE60098DA3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6815D415503EE60098DA3A /* AppDelegate.m */; };
 		CD6815D815503EE60098DA3A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6815D615503EE60098DA3A /* MainMenu.xib */; };
-		CDA48C4D15504709008D89AE /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C4C15504709008D89AE /* Geometry.cpp */; };
-		CDA48C5115504A73008D89AE /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C5015504A73008D89AE /* Plane.cpp */; };
-		CDA48C5715505AF9008D89AE /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C5615505AF9008D89AE /* Sphere.cpp */; };
-		CDA48C961550D72D008D89AE /* Geometry_UnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C841550D68F008D89AE /* Geometry_UnitTest.cpp */; };
-		CDA48C991550D763008D89AE /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA48C6B1550CE62008D89AE /* gtest.framework */; };
-		CDA48CA21550D920008D89AE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48CA11550D920008D89AE /* main.cpp */; };
+		CD9CCA88155195F00015545E /* plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9CCA83155195F00015545E /* plane.cpp */; };
+		CD9CCA89155195F00015545E /* sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9CCA86155195F00015545E /* sphere.cpp */; };
+		CD9CCA8C1551960B0015545E /* geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9CCA8A1551960B0015545E /* geometry.cpp */; };
+		CD9CCA91155196750015545E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9CCA8F155196750015545E /* main.cpp */; };
+		CD9CCA93155196860015545E /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9CCA92155196860015545E /* gtest.framework */; };
+		CD9CCA97155198050015545E /* geometrytests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9CCA96155198050015545E /* geometrytests.cpp */; };
 		CDA9CE9615503F8400135971 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDA9CE9515503F8400135971 /* AppController.mm */; };
 /* End PBXBuildFile section */
 
@@ -48,18 +48,18 @@
 		CD6815D315503EE60098DA3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD6815D415503EE60098DA3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD6815D715503EE60098DA3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		CDA48C4C15504709008D89AE /* Geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Geometry.cpp; sourceTree = "<group>"; };
-		CDA48C4E1550471C008D89AE /* Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
-		CDA48C5015504A73008D89AE /* Plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plane.cpp; sourceTree = "<group>"; };
-		CDA48C5215504BC1008D89AE /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
-		CDA48C5315504D2F008D89AE /* ShadeRec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadeRec.h; sourceTree = "<group>"; };
-		CDA48C5415504F86008D89AE /* Plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
-		CDA48C5515505A57008D89AE /* Sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
-		CDA48C5615505AF9008D89AE /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere.cpp; sourceTree = "<group>"; };
-		CDA48C6B1550CE62008D89AE /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = ../tools/gtest.framework; sourceTree = "<group>"; };
-		CDA48C841550D68F008D89AE /* Geometry_UnitTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Geometry_UnitTest.cpp; path = ../tests/Geometry_UnitTest.cpp; sourceTree = "<group>"; };
+		CD9CCA83155195F00015545E /* plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = plane.cpp; path = engine/shapes/plane.cpp; sourceTree = SOURCE_ROOT; };
+		CD9CCA84155195F00015545E /* plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = plane.h; path = engine/shapes/plane.h; sourceTree = SOURCE_ROOT; };
+		CD9CCA85155195F00015545E /* shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shape.h; path = engine/shapes/shape.h; sourceTree = SOURCE_ROOT; };
+		CD9CCA86155195F00015545E /* sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sphere.cpp; path = engine/shapes/sphere.cpp; sourceTree = SOURCE_ROOT; };
+		CD9CCA87155195F00015545E /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sphere.h; path = engine/shapes/sphere.h; sourceTree = SOURCE_ROOT; };
+		CD9CCA8A1551960B0015545E /* geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = geometry.cpp; path = engine/math/geometry.cpp; sourceTree = SOURCE_ROOT; };
+		CD9CCA8B1551960B0015545E /* geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = geometry.h; path = engine/math/geometry.h; sourceTree = SOURCE_ROOT; };
+		CD9CCA8D1551961D0015545E /* shaderec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shaderec.h; path = engine/shaderec.h; sourceTree = SOURCE_ROOT; };
+		CD9CCA8F155196750015545E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = tests/main.cpp; sourceTree = "<group>"; };
+		CD9CCA92155196860015545E /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = tests/3rdparty/gtest.framework; sourceTree = "<group>"; };
+		CD9CCA96155198050015545E /* geometrytests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geometrytests.cpp; sourceTree = "<group>"; };
 		CDA48C8C1550D728008D89AE /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDA48CA11550D920008D89AE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../tests/main.cpp; sourceTree = "<group>"; };
 		CDA9CE9415503F8400135971 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		CDA9CE9515503F8400135971 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA48C991550D763008D89AE /* gtest.framework in Frameworks */,
+				CD9CCA93155196860015545E /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +87,8 @@
 		CD6815B215503EE50098DA3A = {
 			isa = PBXGroup;
 			children = (
-				CDA48C4A155046CC008D89AE /* Source */,
-				CD6815C715503EE50098DA3A /* Aether */,
+				CDA48C4A155046CC008D89AE /* Engine */,
+				CD6815C715503EE50098DA3A /* GUI */,
 				CDA48C6E1550D5DF008D89AE /* Tests */,
 				CD6815C015503EE50098DA3A /* Frameworks */,
 				CD6815BE15503EE50098DA3A /* Products */,
@@ -107,7 +107,7 @@
 		CD6815C015503EE50098DA3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CDA48C6B1550CE62008D89AE /* gtest.framework */,
+				CD9CCA92155196860015545E /* gtest.framework */,
 				CD6815C115503EE50098DA3A /* Cocoa.framework */,
 				CD6815C315503EE50098DA3A /* Other Frameworks */,
 			);
@@ -124,7 +124,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		CD6815C715503EE50098DA3A /* Aether */ = {
+		CD6815C715503EE50098DA3A /* GUI */ = {
 			isa = PBXGroup;
 			children = (
 				CDA9CE9415503F8400135971 /* AppController.h */,
@@ -134,7 +134,8 @@
 				CD6815D615503EE60098DA3A /* MainMenu.xib */,
 				CD6815C815503EE50098DA3A /* Supporting Files */,
 			);
-			path = Aether;
+			name = GUI;
+			path = gui/osx;
 			sourceTree = "<group>";
 		};
 		CD6815C815503EE50098DA3A /* Supporting Files */ = {
@@ -149,34 +150,54 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CDA48C4A155046CC008D89AE /* Source */ = {
+		CD9CCA81155194DA0015545E /* shapes */ = {
 			isa = PBXGroup;
 			children = (
-				CDA48C4C15504709008D89AE /* Geometry.cpp */,
-				CDA48C4E1550471C008D89AE /* Geometry.h */,
-				CDA48C5315504D2F008D89AE /* ShadeRec.h */,
-				CDA48C4F15504A54008D89AE /* Shapes */,
+				CD9CCA83155195F00015545E /* plane.cpp */,
+				CD9CCA84155195F00015545E /* plane.h */,
+				CD9CCA85155195F00015545E /* shape.h */,
+				CD9CCA86155195F00015545E /* sphere.cpp */,
+				CD9CCA87155195F00015545E /* sphere.h */,
 			);
-			name = Source;
-			sourceTree = "<group>";
+			name = shapes;
+			path = engine/shapes;
+			sourceTree = SOURCE_ROOT;
 		};
-		CDA48C4F15504A54008D89AE /* Shapes */ = {
+		CD9CCA82155195840015545E /* math */ = {
 			isa = PBXGroup;
 			children = (
-				CDA48C5015504A73008D89AE /* Plane.cpp */,
-				CDA48C5415504F86008D89AE /* Plane.h */,
-				CDA48C5215504BC1008D89AE /* Shape.h */,
-				CDA48C5615505AF9008D89AE /* Sphere.cpp */,
-				CDA48C5515505A57008D89AE /* Sphere.h */,
+				CD9CCA8A1551960B0015545E /* geometry.cpp */,
+				CD9CCA8B1551960B0015545E /* geometry.h */,
 			);
-			name = Shapes;
+			name = math;
+			path = engine/math;
+			sourceTree = SOURCE_ROOT;
+		};
+		CD9CCA95155197E80015545E /* math */ = {
+			isa = PBXGroup;
+			children = (
+				CD9CCA96155198050015545E /* geometrytests.cpp */,
+			);
+			name = math;
+			path = tests/math;
+			sourceTree = SOURCE_ROOT;
+		};
+		CDA48C4A155046CC008D89AE /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				CD9CCA8D1551961D0015545E /* shaderec.h */,
+				CD9CCA82155195840015545E /* math */,
+				CD9CCA81155194DA0015545E /* shapes */,
+			);
+			name = Engine;
+			path = engine;
 			sourceTree = "<group>";
 		};
 		CDA48C6E1550D5DF008D89AE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				CDA48C841550D68F008D89AE /* Geometry_UnitTest.cpp */,
-				CDA48CA11550D920008D89AE /* main.cpp */,
+				CD9CCA95155197E80015545E /* math */,
+				CD9CCA8F155196750015545E /* main.cpp */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -226,7 +247,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = CD6815B715503EE50098DA3A /* Build configuration list for PBXProject "Aether" */;
+			buildConfigurationList = CD6815B715503EE50098DA3A /* Build configuration list for PBXProject "aether" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -265,9 +286,9 @@
 				CD6815CE15503EE50098DA3A /* main.m in Sources */,
 				CD6815D515503EE60098DA3A /* AppDelegate.m in Sources */,
 				CDA9CE9615503F8400135971 /* AppController.mm in Sources */,
-				CDA48C4D15504709008D89AE /* Geometry.cpp in Sources */,
-				CDA48C5115504A73008D89AE /* Plane.cpp in Sources */,
-				CDA48C5715505AF9008D89AE /* Sphere.cpp in Sources */,
+				CD9CCA88155195F00015545E /* plane.cpp in Sources */,
+				CD9CCA89155195F00015545E /* sphere.cpp in Sources */,
+				CD9CCA8C1551960B0015545E /* geometry.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA48C961550D72D008D89AE /* Geometry_UnitTest.cpp in Sources */,
-				CDA48CA21550D920008D89AE /* main.cpp in Sources */,
+				CD9CCA91155196750015545E /* main.cpp in Sources */,
+				CD9CCA97155198050015545E /* geometrytests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,12 +385,13 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../tools\"",
+					"\"$(SRCROOT)/tests/3rdparty\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Aether/Aether-Prefix.pch";
-				INFOPLIST_FILE = "Aether/Aether-Info.plist";
+				GCC_PREFIX_HEADER = "gui/osx/Aether-Prefix.pch";
+				INFOPLIST_FILE = "gui/osx/Aether-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/tests/3rdparty\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -381,12 +403,13 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../tools\"",
+					"\"$(SRCROOT)/tests/3rdparty\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Aether/Aether-Prefix.pch";
-				INFOPLIST_FILE = "Aether/Aether-Info.plist";
+				GCC_PREFIX_HEADER = "gui/osx/Aether-Prefix.pch";
+				INFOPLIST_FILE = "gui/osx/Aether-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/tests/3rdparty\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -397,8 +420,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../tools\"",
+					"\"$(SRCROOT)/tests/3rdparty\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../tools\" \"$(SRCROOT)/tests/3rdparty\"";
 			};
 			name = Debug;
 		};
@@ -408,15 +433,17 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../tools\"",
+					"\"$(SRCROOT)/tests/3rdparty\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../tools\" \"$(SRCROOT)/tests/3rdparty\"";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD6815B715503EE50098DA3A /* Build configuration list for PBXProject "Aether" */ = {
+		CD6815B715503EE50098DA3A /* Build configuration list for PBXProject "aether" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD6815D915503EE60098DA3A /* Debug */,

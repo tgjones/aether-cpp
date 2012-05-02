@@ -16,7 +16,7 @@
                BlueprintIdentifier = "CD6815BC15503EE50098DA3A"
                BuildableName = "Aether.app"
                BlueprintName = "Aether"
-               ReferencedContainer = "container:Aether.xcodeproj">
+               ReferencedContainer = "container:aether.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,7 +34,7 @@
             BlueprintIdentifier = "CD6815BC15503EE50098DA3A"
             BuildableName = "Aether.app"
             BlueprintName = "Aether"
-            ReferencedContainer = "container:Aether.xcodeproj">
+            ReferencedContainer = "container:aether.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,7 +53,7 @@
             BlueprintIdentifier = "CD6815BC15503EE50098DA3A"
             BuildableName = "Aether.app"
             BlueprintName = "Aether"
-            ReferencedContainer = "container:Aether.xcodeproj">
+            ReferencedContainer = "container:aether.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,7 +71,7 @@
             BlueprintIdentifier = "CD6815BC15503EE50098DA3A"
             BuildableName = "Aether.app"
             BlueprintName = "Aether"
-            ReferencedContainer = "container:Aether.xcodeproj">
+            ReferencedContainer = "container:aether.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
