@@ -1,5 +1,5 @@
-#include "gtest/gtest.h"
-#include "Geometry.h"
+#include "tests.h"
+#include "geometry.h"
 
 TEST(Vector3DTest, Constructor) {
 	Vector3D v = Vector3D(1, 2, 3);
