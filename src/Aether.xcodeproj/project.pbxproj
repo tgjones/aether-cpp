@@ -16,8 +16,24 @@
 		CDA48C4D15504709008D89AE /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C4C15504709008D89AE /* Geometry.cpp */; };
 		CDA48C5115504A73008D89AE /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C5015504A73008D89AE /* Plane.cpp */; };
 		CDA48C5715505AF9008D89AE /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C5615505AF9008D89AE /* Sphere.cpp */; };
+		CDA48C6C1550CE62008D89AE /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA48C6B1550CE62008D89AE /* gtest.framework */; };
+		CDA48C961550D72D008D89AE /* Geometry_UnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C841550D68F008D89AE /* Geometry_UnitTest.cpp */; };
+		CDA48C991550D763008D89AE /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA48C6B1550CE62008D89AE /* gtest.framework */; };
+		CDA48CA21550D920008D89AE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48CA11550D920008D89AE /* main.cpp */; };
 		CDA9CE9615503F8400135971 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDA9CE9515503F8400135971 /* AppController.mm */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDA48C8A1550D728008D89AE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CD6815BD15503EE50098DA3A /* Aether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aether.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +57,10 @@
 		CDA48C5415504F86008D89AE /* Plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
 		CDA48C5515505A57008D89AE /* Sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
 		CDA48C5615505AF9008D89AE /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere.cpp; sourceTree = "<group>"; };
+		CDA48C6B1550CE62008D89AE /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = ../tools/gtest.framework; sourceTree = "<group>"; };
+		CDA48C841550D68F008D89AE /* Geometry_UnitTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Geometry_UnitTest.cpp; path = ../tests/Geometry_UnitTest.cpp; sourceTree = "<group>"; };
+		CDA48C8C1550D728008D89AE /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA48CA11550D920008D89AE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../tests/main.cpp; sourceTree = "<group>"; };
 		CDA9CE9415503F8400135971 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		CDA9CE9515503F8400135971 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +71,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD6815C215503EE50098DA3A /* Cocoa.framework in Frameworks */,
+				CDA48C6C1550CE62008D89AE /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA48C891550D728008D89AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA48C991550D763008D89AE /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +91,7 @@
 			children = (
 				CDA48C4A155046CC008D89AE /* Source */,
 				CD6815C715503EE50098DA3A /* Aether */,
+				CDA48C6E1550D5DF008D89AE /* Tests */,
 				CD6815C015503EE50098DA3A /* Frameworks */,
 				CD6815BE15503EE50098DA3A /* Products */,
 			);
@@ -71,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6815BD15503EE50098DA3A /* Aether.app */,
+				CDA48C8C1550D728008D89AE /* Test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +109,7 @@
 		CD6815C015503EE50098DA3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDA48C6B1550CE62008D89AE /* gtest.framework */,
 				CD6815C115503EE50098DA3A /* Cocoa.framework */,
 				CD6815C315503EE50098DA3A /* Other Frameworks */,
 			);
@@ -142,6 +174,15 @@
 			name = Shapes;
 			sourceTree = "<group>";
 		};
+		CDA48C6E1550D5DF008D89AE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CDA48C841550D68F008D89AE /* Geometry_UnitTest.cpp */,
+				CDA48CA11550D920008D89AE /* main.cpp */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +202,23 @@
 			productName = Aether;
 			productReference = CD6815BD15503EE50098DA3A /* Aether.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CDA48C8B1550D728008D89AE /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA48C931550D728008D89AE /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				CDA48C881550D728008D89AE /* Sources */,
+				CDA48C891550D728008D89AE /* Frameworks */,
+				CDA48C8A1550D728008D89AE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test;
+			productName = Test;
+			productReference = CDA48C8C1550D728008D89AE /* Test */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -183,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				CD6815BC15503EE50098DA3A /* Aether */,
+				CDA48C8B1550D728008D89AE /* Test */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +270,15 @@
 				CDA48C4D15504709008D89AE /* Geometry.cpp in Sources */,
 				CDA48C5115504A73008D89AE /* Plane.cpp in Sources */,
 				CDA48C5715505AF9008D89AE /* Sphere.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA48C881550D728008D89AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA48C961550D72D008D89AE /* Geometry_UnitTest.cpp in Sources */,
+				CDA48CA21550D920008D89AE /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +364,10 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../tools\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aether/Aether-Prefix.pch";
 				INFOPLIST_FILE = "Aether/Aether-Info.plist";
@@ -309,11 +381,37 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../tools\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aether/Aether-Prefix.pch";
 				INFOPLIST_FILE = "Aether/Aether-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CDA48C941550D728008D89AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../tools\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDA48C951550D728008D89AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../tools\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -337,6 +435,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CDA48C931550D728008D89AE /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA48C941550D728008D89AE /* Debug */,
+				CDA48C951550D728008D89AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

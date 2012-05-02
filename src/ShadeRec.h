@@ -15,14 +15,14 @@ class World;
 class ShadeRec {
 public:
 	// Constructor
-	ShadeRec(World& wr) : w(wr) { }
+	//ShadeRec(World& wr) : w(wr) { }
 	
 	// Public data
 	bool hitAnObject = false;
 	Point3D localHitPoint;
 	Normal3D normal;
 	Color color;
-	World w;
+	//World w;
 };
 
 #endif

@@ -8,6 +8,8 @@
 
 #include "Plane.h"
 
+const double Plane::kEpsilon = 0.001;
+
 bool
 Plane::hit(const Ray3D& ray, double& tmin, ShadeRec& sr) const {
 	double t = dot((point - ray.origin), normal) / dot(ray.direction, normal);
