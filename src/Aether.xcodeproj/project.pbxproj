@@ -16,7 +16,6 @@
 		CDA48C4D15504709008D89AE /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C4C15504709008D89AE /* Geometry.cpp */; };
 		CDA48C5115504A73008D89AE /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C5015504A73008D89AE /* Plane.cpp */; };
 		CDA48C5715505AF9008D89AE /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C5615505AF9008D89AE /* Sphere.cpp */; };
-		CDA48C6C1550CE62008D89AE /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA48C6B1550CE62008D89AE /* gtest.framework */; };
 		CDA48C961550D72D008D89AE /* Geometry_UnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48C841550D68F008D89AE /* Geometry_UnitTest.cpp */; };
 		CDA48C991550D763008D89AE /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA48C6B1550CE62008D89AE /* gtest.framework */; };
 		CDA48CA21550D920008D89AE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA48CA11550D920008D89AE /* main.cpp */; };
@@ -71,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD6815C215503EE50098DA3A /* Cocoa.framework in Frameworks */,
-				CDA48C6C1550CE62008D89AE /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +441,7 @@
 				CDA48C951550D728008D89AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
