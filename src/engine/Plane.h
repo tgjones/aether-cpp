@@ -19,7 +19,7 @@ public:
 		: _point(point), _normal(normal)
 	{}
 	
-	virtual bool hit(const Ray3D& ray, double& tmin, ShadeRec& sr) const;
+	virtual bool hit(const Ray3D& ray, double& tmin, ShadeRec& sr) const override;
 	
 private:
 	// Private data

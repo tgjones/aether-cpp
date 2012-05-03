@@ -28,6 +28,8 @@
 		CDA821701551AE8C002C6BCB /* SphereTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA8216F1551AE8C002C6BCB /* SphereTests.cpp */; };
 		CDA821721551AEB6002C6BCB /* Vector3DTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821711551AEB6002C6BCB /* Vector3DTests.cpp */; };
 		CDA9CE9615503F8400135971 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDA9CE9515503F8400135971 /* AppController.mm */; };
+		CDCE09E0155220EB0013A3E3 /* Tracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDCE09DF155220EB0013A3E3 /* Tracer.cpp */; };
+		CDCE09E1155220EB0013A3E3 /* Tracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDCE09DF155220EB0013A3E3 /* Tracer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +82,10 @@
 		CDA821711551AEB6002C6BCB /* Vector3DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector3DTests.cpp; path = tests/Vector3DTests.cpp; sourceTree = SOURCE_ROOT; };
 		CDA9CE9415503F8400135971 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		CDA9CE9515503F8400135971 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
+		CDCE09DD155220BB0013A3E3 /* Tracer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tracer.h; sourceTree = "<group>"; };
+		CDCE09DF155220EB0013A3E3 /* Tracer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tracer.cpp; sourceTree = "<group>"; };
+		CDCE09E31552226A0013A3E3 /* Film.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Film.h; sourceTree = "<group>"; };
+		CDCE09E4155224BE0013A3E3 /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,11 +207,15 @@
 		CDA48C4A155046CC008D89AE /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				CDCE09E21552225D0013A3E3 /* Films */,
 				CD6328511551B05400DADA5F /* Cameras */,
 				CDA821451551A5F7002C6BCB /* Math */,
 				CD9CCA81155194DA0015545E /* Shapes */,
 				CDA821531551A7A3002C6BCB /* Color.h */,
 				CD9CCA8D1551961D0015545E /* ShadeRec.h */,
+				CDCE09DD155220BB0013A3E3 /* Tracer.h */,
+				CDCE09DF155220EB0013A3E3 /* Tracer.cpp */,
+				CDCE09E4155224BE0013A3E3 /* Scene.h */,
 			);
 			name = Engine;
 			path = engine;
@@ -246,6 +256,14 @@
 			);
 			name = Math;
 			path = math;
+			sourceTree = "<group>";
+		};
+		CDCE09E21552225D0013A3E3 /* Films */ = {
+			isa = PBXGroup;
+			children = (
+				CDCE09E31552226A0013A3E3 /* Film.h */,
+			);
+			name = Films;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +355,7 @@
 				CDA821641551AE16002C6BCB /* Vector3D.cpp in Sources */,
 				CDA8216B1551AE2F002C6BCB /* Plane.cpp in Sources */,
 				CDA8216D1551AE2F002C6BCB /* Sphere.cpp in Sources */,
+				CDCE09E0155220EB0013A3E3 /* Tracer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +371,7 @@
 				CDA8216E1551AE2F002C6BCB /* Sphere.cpp in Sources */,
 				CDA821701551AE8C002C6BCB /* SphereTests.cpp in Sources */,
 				CDA821721551AEB6002C6BCB /* Vector3DTests.cpp in Sources */,
+				CDCE09E1155220EB0013A3E3 /* Tracer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

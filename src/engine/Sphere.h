@@ -23,7 +23,7 @@ public:
 	float getRadius();
 	
 	// Methods
-	virtual bool hit(const Ray3D& ray, double& tmin, ShadeRec& sr) const;
+	virtual bool hit(const Ray3D& ray, double& tmin, ShadeRec& sr) const override;
 	
 private:
 	// Private data

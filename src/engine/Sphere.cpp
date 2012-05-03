@@ -18,11 +18,11 @@ Sphere::getRadius() {
 
 bool
 Sphere::hit(const Ray3D& ray, double& tmin, ShadeRec& sr) const {
-	auto temp = ray.origin - _center;
-	auto a = dot(ray.direction, ray.direction);
-	auto b = 2.0 * dot(temp, ray.direction);
-	auto c = dot(temp, temp) - (_radius * _radius);
-	auto disc = (b * b) - (4.0 * a * c);
+	Vector3D temp = ray.origin - _center;
+	float a = dot(ray.direction, ray.direction);
+	float b = 2.0 * dot(temp, ray.direction);
+	float c = dot(temp, temp) - (_radius * _radius);
+	float disc = (b * b) - (4.0 * a * c);
 	
 	if (disc < 0)
 		return false;

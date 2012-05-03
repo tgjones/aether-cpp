@@ -7,10 +7,7 @@
 //
 
 #import "AppController.h"
-#import "Geometry.h"
-#import "Shape.h"
-#import "Plane.h"
-#import "ShadeRec.h"
+#import "Math.h"
 
 #define SAMPLE_SIZE 8
 #define SAMPLE_NUMBER 3
