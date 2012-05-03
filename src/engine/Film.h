@@ -2,6 +2,7 @@
 #define Aether_Film_h
 
 #include "Color.h"
+#include "Sample.h"
 
 class Film {
 public:
@@ -11,7 +12,7 @@ public:
 	{ }
 	
 	// Public methods
-	virtual void addSample(int x, int y, Color c) = 0;
+	virtual void addSample(const Sample& sample, Color c) = 0;
 	
 private:
 	// Private data

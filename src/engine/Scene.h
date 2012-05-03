@@ -2,14 +2,27 @@
 #define Aether_Scene_h
 
 #include "Camera.h"
+#include "Sampler.h"
+#include "Shape.h"
 
 class Scene {
 public:
 	// Constructor
-	Scene(Camera camera, Shape shape);
+	Scene(std::shared_ptr<Camera> camera,
+		  std::shared_ptr<Sampler> sampler,
+		  std::shared_ptr<Shape> shape);
 	
 	// Public methods
 	void render();
+	
+private:
+	// Private data
+	std::shared_ptr<Camera> _camera;
+	std::shared_ptr<Sampler> _sampler;
+	std::shared_ptr<Shape> _shape;
+	
+	// Private methods
+	Color evaluateIncomingLight(Ray3D& ray, Sample& sample);
 };
 
 #endif

@@ -12,7 +12,7 @@
 #include "shape.h"
 #include "math.h"
 
-class Sphere : Shape {
+class Sphere : public Shape {
 public:
 	// Constructor
 	Sphere(const Point3D center, const float radius)
@@ -20,6 +20,7 @@ public:
 	{ }
 	
 	// Accessors
+	Point3D getCenter();
 	float getRadius();
 	
 	// Methods

@@ -11,6 +11,11 @@
 
 const double Sphere::kEpsilon = 0.001;
 
+Point3D
+Sphere::getCenter() {
+	return _center;
+}
+
 float
 Sphere::getRadius() {
 	return _radius;

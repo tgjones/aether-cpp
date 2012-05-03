@@ -3,7 +3,9 @@
 #include "sphere.h"
 
 TEST(SphereTests, Constructor) {
-	auto sphere = Sphere(Point3D(1, 2, 3), 10.0);
+	auto point = Point3D(1, 2, 3);
+	auto sphere = Sphere(point, 10.0);
+	EXPECT_EQ(point, sphere.getCenter());
 	EXPECT_EQ(10.0, sphere.getRadius());
 }
 

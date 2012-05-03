@@ -1,7 +1,8 @@
 #ifndef aether_normal3d_h
 #define aether_normal3d_h
 
-#include "vector3d.h"
+#include <ostream>
+#include "Vector3D.h"
 
 class Normal3D {
 public :	
@@ -11,10 +12,13 @@ public :
 	
 	// Operators
 	Normal3D& operator=(const Vector3D& rhs);
+	bool operator==(const Normal3D& n) const;
 	
 	// Public data
 	float x, y, z;
 };
+
+std::ostream& operator<<(std::ostream& stream, const Normal3D& p);
 
 float dot(const Normal3D &n1, const Vector3D &v2);
 float dot(const Vector3D &v1, const Normal3D &n2);

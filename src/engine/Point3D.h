@@ -1,6 +1,7 @@
 #ifndef aether_point3d_h
 #define aether_point3d_h
 
+#include <ostream>
 #include "vector3d.h"
 
 class Point3D {
@@ -13,10 +14,13 @@ public :
 	Vector3D operator-(const Point3D& p) const;
 	Point3D operator+(const Vector3D& v) const;
 	Point3D operator*(const double a) const;
+	bool operator==(const Point3D& p) const;
+	bool operator!=(const Point3D& p) const;
 	
 	// Public data
 	float x, y, z;
 };
 
+std::ostream& operator<<(std::ostream& stream, const Point3D& p);
 
 #endif

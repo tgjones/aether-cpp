@@ -1,6 +1,14 @@
 #ifndef aether_vector3d_h
 #define aether_vector3d_h
 
+#define UP_X (0.0f)
+#define UP_Y (1.0f)
+#define UP_Z (0.0f)
+
+#define DOWN_X (-UP_X)
+#define DOWN_Y (-UP_Y)
+#define DOWN_Z (-UP_Z)
+
 #define FORWARD_X (0.0f)
 #define FORWARD_Y (0.0f)
 #define FORWARD_Z (-1.0f)
@@ -14,6 +22,8 @@ class Vector3D {
 	// Statics
 	static const Vector3D Forward;
 	static const Vector3D Backward;
+	static const Vector3D Up;
+	static const Vector3D Down;
 	
 	// Constructors
 	Vector3D(float x, float y, float z) : x(x), y(y), z(z) { }
