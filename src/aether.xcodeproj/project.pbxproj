@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CD6328521551B06400DADA5F /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 		CD6815BD15503EE50098DA3A /* Aether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6815C115503EE50098DA3A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CD6815C415503EE50098DA3A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -101,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD6328511551B05400DADA5F /* Cameras */ = {
+			isa = PBXGroup;
+			children = (
+				CD6328521551B06400DADA5F /* Camera.h */,
+			);
+			name = Cameras;
+			sourceTree = "<group>";
+		};
 		CD6815B215503EE50098DA3A = {
 			isa = PBXGroup;
 			children = (
@@ -192,10 +201,11 @@
 		CDA48C4A155046CC008D89AE /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				CD6328511551B05400DADA5F /* Cameras */,
 				CDA821451551A5F7002C6BCB /* Math */,
 				CD9CCA81155194DA0015545E /* Shapes */,
-				CD9CCA8D1551961D0015545E /* ShadeRec.h */,
 				CDA821531551A7A3002C6BCB /* Color.h */,
+				CD9CCA8D1551961D0015545E /* ShadeRec.h */,
 			);
 			name = Engine;
 			path = engine;
@@ -204,8 +214,8 @@
 		CDA48C6E1550D5DF008D89AE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				CDA82133155199F1002C6BCB /* Shapes */,
 				CD9CCA95155197E80015545E /* Math */,
+				CDA82133155199F1002C6BCB /* Shapes */,
 				CDA821421551A0A8002C6BCB /* main.cpp */,
 				CDA821441551A0C6002C6BCB /* Tests.h */,
 			);
@@ -283,7 +293,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = CD6815B715503EE50098DA3A /* Build configuration list for PBXProject "aether" */;
+			buildConfigurationList = CD6815B715503EE50098DA3A /* Build configuration list for PBXProject "Aether" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -489,7 +499,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD6815B715503EE50098DA3A /* Build configuration list for PBXProject "aether" */ = {
+		CD6815B715503EE50098DA3A /* Build configuration list for PBXProject "Aether" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD6815D915503EE60098DA3A /* Debug */,
