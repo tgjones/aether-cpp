@@ -22,7 +22,7 @@ private:
 	std::shared_ptr<Shape> _shape;
 	
 	// Private methods
-	Color evaluateIncomingLight(Ray3D& ray, Sample& sample);
+	Color li(Ray3D& ray, Sample& sample);
 };
 
 #endif

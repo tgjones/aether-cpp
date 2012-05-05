@@ -15,7 +15,7 @@ public:
 	std::shared_ptr<Film> getFilm() const;
 	
 	// Public methods
-	virtual Ray3D generateRay(const Sample& sample) const;
+	virtual Ray3D generateRay(const Sample& sample) const = 0;
 	
 private:
 	// Private data

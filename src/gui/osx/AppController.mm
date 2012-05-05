@@ -7,7 +7,7 @@
 //
 
 #import "AppController.h"
-#import "Math.h"
+#include "Aether.h"
 
 #define SAMPLE_SIZE 8
 #define SAMPLE_NUMBER 3
@@ -18,6 +18,9 @@
 - (IBAction)render:(id)sender {
 	CGSize size = [imageView bounds].size;
 	int pixelWidth = size.width, pixelHeight = size.height;
+	
+	std::vector<Color> renderedSceneData = aetherRenderScene(pixelWidth, pixelHeight);
+	
 	unsigned char* bitmapData = (unsigned char*) calloc(pixelWidth * pixelHeight * PIXEL_BYTES,
 														sizeof(unsigned char));
 	
@@ -25,12 +28,16 @@
 	{
 		for (uint col = 0; col < pixelWidth; col++)
 		{
-			double color[3] = { 128, 0, 0 };
+			double color[3] = {
+				renderedSceneData[(row * pixelWidth) + col].r,
+				renderedSceneData[(row * pixelWidth) + col].g,
+				renderedSceneData[(row * pixelWidth) + col].b
+			};
 			int intColor[3];
 			uint byteOffset = PIXEL_BYTES * ((row * pixelWidth) + col);
 			for (uint i = 0; i < 3; i++)
 			{
-				intColor[i] = round(color[i]);
+				intColor[i] = round(color[i] * 255);
 				bitmapData[byteOffset + i] = intColor[i];
 			}
 		}

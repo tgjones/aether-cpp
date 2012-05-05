@@ -1,5 +1,5 @@
-#include "tests.h"
-#include "vector3d.h"
+#include "Tests.h"
+#include "Vector3D.h"
 
 TEST(Vector3DTest, Constructor) {
 	auto v = Vector3D(1, 2, 3);

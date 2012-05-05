@@ -14,8 +14,8 @@ public:
 	// Public methods
 	virtual void addSample(const Sample& sample, Color c) = 0;
 	
-private:
-	// Private data
+protected:
+	// Protected data
 	const int _xRes, _yRes;
 };
 

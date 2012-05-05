@@ -12,6 +12,23 @@
 		CD3C11501552CE6700961F4D /* PlaneTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C114F1552CE6700961F4D /* PlaneTests.cpp */; };
 		CD3C11761552EA9200961F4D /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11751552EA9200961F4D /* Scene.cpp */; };
 		CD3C11771552EA9200961F4D /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11751552EA9200961F4D /* Scene.cpp */; };
+		CD3C117A15544E2800961F4D /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C117915544E2800961F4D /* Color.cpp */; };
+		CD3C117B15544E2800961F4D /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C117915544E2800961F4D /* Color.cpp */; };
+		CD3C117D1554512200961F4D /* Aether.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C117C1554512200961F4D /* Aether.cpp */; };
+		CD3C117E1554512200961F4D /* Aether.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C117C1554512200961F4D /* Aether.cpp */; };
+		CD3C11821554565200961F4D /* RegularSampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11811554565200961F4D /* RegularSampler.cpp */; };
+		CD3C11831554565200961F4D /* RegularSampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11811554565200961F4D /* RegularSampler.cpp */; };
+		CD3C11851554567D00961F4D /* Sampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11841554567D00961F4D /* Sampler.cpp */; };
+		CD3C11861554567D00961F4D /* Sampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11841554567D00961F4D /* Sampler.cpp */; };
+		CD3C1188155511DD00961F4D /* Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C1187155511DC00961F4D /* Sample.cpp */; };
+		CD3C1189155511DD00961F4D /* Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C1187155511DC00961F4D /* Sample.cpp */; };
+		CD3C118B1555122E00961F4D /* InMemoryFilm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C118A1555122E00961F4D /* InMemoryFilm.cpp */; };
+		CD3C118C1555122E00961F4D /* InMemoryFilm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C118A1555122E00961F4D /* InMemoryFilm.cpp */; };
+		CD3C118E155514E900961F4D /* OrthographicCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C118D155514E900961F4D /* OrthographicCamera.cpp */; };
+		CD3C118F155514E900961F4D /* OrthographicCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C118D155514E900961F4D /* OrthographicCamera.cpp */; };
+		CD3C11911555156B00961F4D /* ProjectionCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11901555156B00961F4D /* ProjectionCamera.cpp */; };
+		CD3C11921555156B00961F4D /* ProjectionCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11901555156B00961F4D /* ProjectionCamera.cpp */; };
+		CD3C119815552A4300961F4D /* RegularSamplerTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11951555281000961F4D /* RegularSamplerTests.cpp */; };
 		CD6815C215503EE50098DA3A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6815C115503EE50098DA3A /* Cocoa.framework */; };
 		CD6815CC15503EE50098DA3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD6815CA15503EE50098DA3A /* InfoPlist.strings */; };
 		CD6815CE15503EE50098DA3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6815CD15503EE50098DA3A /* main.m */; };
@@ -58,6 +75,18 @@
 		CD3C11741552E79700961F4D /* ProjectionCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectionCamera.h; sourceTree = "<group>"; };
 		CD3C11751552EA9200961F4D /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		CD3C11781552ED0E00961F4D /* Sampler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sampler.h; sourceTree = "<group>"; };
+		CD3C117915544E2800961F4D /* Color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Color.cpp; sourceTree = "<group>"; };
+		CD3C117C1554512200961F4D /* Aether.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Aether.cpp; sourceTree = "<group>"; };
+		CD3C117F1554521E00961F4D /* InMemoryFilm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InMemoryFilm.h; sourceTree = "<group>"; };
+		CD3C11801554561200961F4D /* RegularSampler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegularSampler.h; sourceTree = "<group>"; };
+		CD3C11811554565200961F4D /* RegularSampler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegularSampler.cpp; sourceTree = "<group>"; };
+		CD3C11841554567D00961F4D /* Sampler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sampler.cpp; sourceTree = "<group>"; };
+		CD3C1187155511DC00961F4D /* Sample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sample.cpp; sourceTree = "<group>"; };
+		CD3C118A1555122E00961F4D /* InMemoryFilm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InMemoryFilm.cpp; sourceTree = "<group>"; };
+		CD3C118D155514E900961F4D /* OrthographicCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrthographicCamera.cpp; sourceTree = "<group>"; };
+		CD3C11901555156B00961F4D /* ProjectionCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProjectionCamera.cpp; sourceTree = "<group>"; };
+		CD3C11931555186100961F4D /* Aether.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aether.h; sourceTree = "<group>"; };
+		CD3C11951555281000961F4D /* RegularSamplerTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegularSamplerTests.cpp; sourceTree = "<group>"; };
 		CD6328521551B06400DADA5F /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 		CD6815BD15503EE50098DA3A /* Aether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6815C115503EE50098DA3A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -121,13 +150,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CD3C11701552E47600961F4D /* Samplers */ = {
+		CD3C11701552E47600961F4D /* Sampling */ = {
 			isa = PBXGroup;
 			children = (
+				CD3C1187155511DC00961F4D /* Sample.cpp */,
 				CD3C11721552E49B00961F4D /* Sample.h */,
+				CD3C11841554567D00961F4D /* Sampler.cpp */,
 				CD3C11781552ED0E00961F4D /* Sampler.h */,
+				CD3C11811554565200961F4D /* RegularSampler.cpp */,
+				CD3C11801554561200961F4D /* RegularSampler.h */,
 			);
-			name = Samplers;
+			name = Sampling;
+			sourceTree = "<group>";
+		};
+		CD3C11941555280100961F4D /* Sampling */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C11951555281000961F4D /* RegularSamplerTests.cpp */,
+			);
+			name = Sampling;
 			sourceTree = "<group>";
 		};
 		CD6328511551B05400DADA5F /* Cameras */ = {
@@ -135,7 +176,9 @@
 			children = (
 				CD6328521551B06400DADA5F /* Camera.h */,
 				CD3C114A1552B27100961F4D /* Camera.cpp */,
+				CD3C118D155514E900961F4D /* OrthographicCamera.cpp */,
 				CD3C11731552E6E100961F4D /* OrthographicCamera.h */,
+				CD3C11901555156B00961F4D /* ProjectionCamera.cpp */,
 				CD3C11741552E79700961F4D /* ProjectionCamera.h */,
 			);
 			name = Cameras;
@@ -235,8 +278,11 @@
 				CDCE09E21552225D0013A3E3 /* Films */,
 				CD6328511551B05400DADA5F /* Cameras */,
 				CDA821451551A5F7002C6BCB /* Math */,
-				CD3C11701552E47600961F4D /* Samplers */,
+				CD3C11701552E47600961F4D /* Sampling */,
 				CD9CCA81155194DA0015545E /* Shapes */,
+				CD3C117C1554512200961F4D /* Aether.cpp */,
+				CD3C11931555186100961F4D /* Aether.h */,
+				CD3C117915544E2800961F4D /* Color.cpp */,
 				CDA821531551A7A3002C6BCB /* Color.h */,
 				CD9CCA8D1551961D0015545E /* ShadeRec.h */,
 				CDCE09DF155220EB0013A3E3 /* Tracer.cpp */,
@@ -251,6 +297,7 @@
 		CDA48C6E1550D5DF008D89AE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				CD3C11941555280100961F4D /* Sampling */,
 				CD9CCA95155197E80015545E /* Math */,
 				CDA82133155199F1002C6BCB /* Shapes */,
 				CDA821421551A0A8002C6BCB /* main.cpp */,
@@ -291,6 +338,8 @@
 			isa = PBXGroup;
 			children = (
 				CDCE09E31552226A0013A3E3 /* Film.h */,
+				CD3C118A1555122E00961F4D /* InMemoryFilm.cpp */,
+				CD3C117F1554521E00961F4D /* InMemoryFilm.h */,
 			);
 			name = Films;
 			sourceTree = "<group>";
@@ -387,6 +436,14 @@
 				CDCE09E0155220EB0013A3E3 /* Tracer.cpp in Sources */,
 				CD3C114B1552B27100961F4D /* Camera.cpp in Sources */,
 				CD3C11761552EA9200961F4D /* Scene.cpp in Sources */,
+				CD3C117A15544E2800961F4D /* Color.cpp in Sources */,
+				CD3C117D1554512200961F4D /* Aether.cpp in Sources */,
+				CD3C11821554565200961F4D /* RegularSampler.cpp in Sources */,
+				CD3C11851554567D00961F4D /* Sampler.cpp in Sources */,
+				CD3C1188155511DD00961F4D /* Sample.cpp in Sources */,
+				CD3C118B1555122E00961F4D /* InMemoryFilm.cpp in Sources */,
+				CD3C118E155514E900961F4D /* OrthographicCamera.cpp in Sources */,
+				CD3C11911555156B00961F4D /* ProjectionCamera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +463,15 @@
 				CD3C114C1552B27100961F4D /* Camera.cpp in Sources */,
 				CD3C11501552CE6700961F4D /* PlaneTests.cpp in Sources */,
 				CD3C11771552EA9200961F4D /* Scene.cpp in Sources */,
+				CD3C117B15544E2800961F4D /* Color.cpp in Sources */,
+				CD3C117E1554512200961F4D /* Aether.cpp in Sources */,
+				CD3C11831554565200961F4D /* RegularSampler.cpp in Sources */,
+				CD3C11861554567D00961F4D /* Sampler.cpp in Sources */,
+				CD3C1189155511DD00961F4D /* Sample.cpp in Sources */,
+				CD3C118C1555122E00961F4D /* InMemoryFilm.cpp in Sources */,
+				CD3C118F155514E900961F4D /* OrthographicCamera.cpp in Sources */,
+				CD3C11921555156B00961F4D /* ProjectionCamera.cpp in Sources */,
+				CD3C119815552A4300961F4D /* RegularSamplerTests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
