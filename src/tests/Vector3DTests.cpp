@@ -1,9 +1,15 @@
-#include "Tests.h"
+#include <igloo/igloo_alt.h>
+using namespace igloo;
+
 #include "Vector3D.h"
 
-TEST(Vector3DTest, Constructor) {
-	auto v = Vector3D(1, 2, 3);
-	EXPECT_EQ(1, v.x);
-	EXPECT_EQ(2, v.y);
-	EXPECT_EQ(3, v.z);
-}
+Describe(Vector3DClass)
+{
+	It(Has_a_constructor)
+	{
+		auto v = Vector3D(1, 2, 3);
+		Assert::That(1, Equals(v.x));
+		Assert::That(2, Equals(v.y));
+		Assert::That(3, Equals(v.z));
+	}
+};

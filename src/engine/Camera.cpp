@@ -6,3 +6,9 @@ std::shared_ptr<Film>
 Camera::getFilm() const {
 	return _film;
 }
+
+float
+Camera::getAspectRatio() const
+{
+	return _film->getAspectRatio();
+}

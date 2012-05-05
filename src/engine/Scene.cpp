@@ -20,5 +20,12 @@ Scene::render() {
 
 Color
 Scene::li(Ray3D &ray, Sample &sample) {
+	// TODO: Use Integrator to actually trace ray.
+	double tmin;
+	ShadeRec sr;
+	if (_shape->hit(ray, tmin, sr))
+	{
+		return Color(1, 0, 0);
+	}
 	return Color::Blue;
 }

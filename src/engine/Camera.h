@@ -17,8 +17,11 @@ public:
 	// Public methods
 	virtual Ray3D generateRay(const Sample& sample) const = 0;
 	
-private:
-	// Private data
+protected:
+	// Protected methods
+	float getAspectRatio() const;
+	
+	// Protected data
 	std::shared_ptr<Film> _film;
 };
 

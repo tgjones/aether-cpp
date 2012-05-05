@@ -13,6 +13,9 @@ public:
 	
 	// Public methods
 	virtual void addSample(const Sample& sample, Color c) = 0;
+	float getAspectRatio() const;
+	int getXRes() const;
+	int getYRes() const;
 	
 protected:
 	// Protected data

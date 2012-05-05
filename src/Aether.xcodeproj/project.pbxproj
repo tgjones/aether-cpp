@@ -29,13 +29,18 @@
 		CD3C11911555156B00961F4D /* ProjectionCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11901555156B00961F4D /* ProjectionCamera.cpp */; };
 		CD3C11921555156B00961F4D /* ProjectionCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11901555156B00961F4D /* ProjectionCamera.cpp */; };
 		CD3C119815552A4300961F4D /* RegularSamplerTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11951555281000961F4D /* RegularSamplerTests.cpp */; };
+		CD3C119A155535A900961F4D /* Matrix3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C1199155535A900961F4D /* Matrix3D.cpp */; };
+		CD3C119B155535A900961F4D /* Matrix3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C1199155535A900961F4D /* Matrix3D.cpp */; };
+		CD3C119D15559A6D00961F4D /* Film.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C119C15559A6D00961F4D /* Film.cpp */; };
+		CD3C119E15559A6D00961F4D /* Film.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C119C15559A6D00961F4D /* Film.cpp */; };
+		CD3C11A115559F8A00961F4D /* PinholeCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11A015559F8900961F4D /* PinholeCamera.cpp */; };
+		CD3C11A215559F8A00961F4D /* PinholeCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3C11A015559F8900961F4D /* PinholeCamera.cpp */; };
 		CD6815C215503EE50098DA3A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6815C115503EE50098DA3A /* Cocoa.framework */; };
 		CD6815CC15503EE50098DA3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD6815CA15503EE50098DA3A /* InfoPlist.strings */; };
 		CD6815CE15503EE50098DA3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6815CD15503EE50098DA3A /* main.m */; };
 		CD6815D215503EE60098DA3A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD6815D015503EE60098DA3A /* Credits.rtf */; };
 		CD6815D515503EE60098DA3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6815D415503EE60098DA3A /* AppDelegate.m */; };
 		CD6815D815503EE60098DA3A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6815D615503EE60098DA3A /* MainMenu.xib */; };
-		CD9CCA93155196860015545E /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9CCA92155196860015545E /* gtest.framework */; };
 		CDA821431551A0A8002C6BCB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821421551A0A8002C6BCB /* main.cpp */; };
 		CDA821601551AE16002C6BCB /* Normal3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821591551AE16002C6BCB /* Normal3D.cpp */; };
 		CDA821611551AE16002C6BCB /* Normal3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821591551AE16002C6BCB /* Normal3D.cpp */; };
@@ -50,8 +55,6 @@
 		CDA821701551AE8C002C6BCB /* SphereTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA8216F1551AE8C002C6BCB /* SphereTests.cpp */; };
 		CDA821721551AEB6002C6BCB /* Vector3DTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDA821711551AEB6002C6BCB /* Vector3DTests.cpp */; };
 		CDA9CE9615503F8400135971 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDA9CE9515503F8400135971 /* AppController.mm */; };
-		CDCE09E0155220EB0013A3E3 /* Tracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDCE09DF155220EB0013A3E3 /* Tracer.cpp */; };
-		CDCE09E1155220EB0013A3E3 /* Tracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDCE09DF155220EB0013A3E3 /* Tracer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +90,10 @@
 		CD3C11901555156B00961F4D /* ProjectionCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProjectionCamera.cpp; sourceTree = "<group>"; };
 		CD3C11931555186100961F4D /* Aether.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aether.h; sourceTree = "<group>"; };
 		CD3C11951555281000961F4D /* RegularSamplerTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegularSamplerTests.cpp; sourceTree = "<group>"; };
+		CD3C1199155535A900961F4D /* Matrix3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix3D.cpp; sourceTree = SOURCE_ROOT; };
+		CD3C119C15559A6D00961F4D /* Film.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Film.cpp; sourceTree = "<group>"; };
+		CD3C119F15559F6800961F4D /* PinholeCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinholeCamera.h; sourceTree = "<group>"; };
+		CD3C11A015559F8900961F4D /* PinholeCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PinholeCamera.cpp; sourceTree = "<group>"; };
 		CD6328521551B06400DADA5F /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 		CD6815BD15503EE50098DA3A /* Aether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6815C115503EE50098DA3A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -102,10 +109,8 @@
 		CD6815D415503EE60098DA3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD6815D715503EE60098DA3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CD9CCA8D1551961D0015545E /* ShadeRec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShadeRec.h; path = engine/ShadeRec.h; sourceTree = SOURCE_ROOT; };
-		CD9CCA92155196860015545E /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = tests/3rdparty/gtest.framework; sourceTree = "<group>"; };
 		CDA48C8C1550D728008D89AE /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA821421551A0A8002C6BCB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		CDA821441551A0C6002C6BCB /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
 		CDA821531551A7A3002C6BCB /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		CDA821581551AE16002C6BCB /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Math.h; path = engine/Math.h; sourceTree = SOURCE_ROOT; };
 		CDA821591551AE16002C6BCB /* Normal3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Normal3D.cpp; path = engine/Normal3D.cpp; sourceTree = SOURCE_ROOT; };
@@ -124,8 +129,6 @@
 		CDA821711551AEB6002C6BCB /* Vector3DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector3DTests.cpp; path = tests/Vector3DTests.cpp; sourceTree = SOURCE_ROOT; };
 		CDA9CE9415503F8400135971 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		CDA9CE9515503F8400135971 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
-		CDCE09DD155220BB0013A3E3 /* Tracer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tracer.h; sourceTree = "<group>"; };
-		CDCE09DF155220EB0013A3E3 /* Tracer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tracer.cpp; sourceTree = "<group>"; };
 		CDCE09E31552226A0013A3E3 /* Film.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Film.h; sourceTree = "<group>"; };
 		CDCE09E4155224BE0013A3E3 /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD9CCA93155196860015545E /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,12 +176,14 @@
 		CD6328511551B05400DADA5F /* Cameras */ = {
 			isa = PBXGroup;
 			children = (
-				CD6328521551B06400DADA5F /* Camera.h */,
 				CD3C114A1552B27100961F4D /* Camera.cpp */,
+				CD6328521551B06400DADA5F /* Camera.h */,
 				CD3C118D155514E900961F4D /* OrthographicCamera.cpp */,
 				CD3C11731552E6E100961F4D /* OrthographicCamera.h */,
 				CD3C11901555156B00961F4D /* ProjectionCamera.cpp */,
 				CD3C11741552E79700961F4D /* ProjectionCamera.h */,
+				CD3C11A015559F8900961F4D /* PinholeCamera.cpp */,
+				CD3C119F15559F6800961F4D /* PinholeCamera.h */,
 			);
 			name = Cameras;
 			sourceTree = "<group>";
@@ -207,7 +211,6 @@
 		CD6815C015503EE50098DA3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD9CCA92155196860015545E /* gtest.framework */,
 				CD6815C115503EE50098DA3A /* Cocoa.framework */,
 				CD6815C315503EE50098DA3A /* Other Frameworks */,
 			);
@@ -285,8 +288,6 @@
 				CD3C117915544E2800961F4D /* Color.cpp */,
 				CDA821531551A7A3002C6BCB /* Color.h */,
 				CD9CCA8D1551961D0015545E /* ShadeRec.h */,
-				CDCE09DF155220EB0013A3E3 /* Tracer.cpp */,
-				CDCE09DD155220BB0013A3E3 /* Tracer.h */,
 				CD3C11751552EA9200961F4D /* Scene.cpp */,
 				CDCE09E4155224BE0013A3E3 /* Scene.h */,
 			);
@@ -301,7 +302,6 @@
 				CD9CCA95155197E80015545E /* Math */,
 				CDA82133155199F1002C6BCB /* Shapes */,
 				CDA821421551A0A8002C6BCB /* main.cpp */,
-				CDA821441551A0C6002C6BCB /* Tests.h */,
 			);
 			name = Tests;
 			path = tests;
@@ -321,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				CDA821581551AE16002C6BCB /* Math.h */,
+				CD3C1199155535A900961F4D /* Matrix3D.cpp */,
 				CD3C114E1552CDE800961F4D /* Matrix3D.h */,
 				CDA821591551AE16002C6BCB /* Normal3D.cpp */,
 				CDA8215A1551AE16002C6BCB /* Normal3D.h */,
@@ -337,6 +338,7 @@
 		CDCE09E21552225D0013A3E3 /* Films */ = {
 			isa = PBXGroup;
 			children = (
+				CD3C119C15559A6D00961F4D /* Film.cpp */,
 				CDCE09E31552226A0013A3E3 /* Film.h */,
 				CD3C118A1555122E00961F4D /* InMemoryFilm.cpp */,
 				CD3C117F1554521E00961F4D /* InMemoryFilm.h */,
@@ -433,7 +435,6 @@
 				CDA821641551AE16002C6BCB /* Vector3D.cpp in Sources */,
 				CDA8216B1551AE2F002C6BCB /* Plane.cpp in Sources */,
 				CDA8216D1551AE2F002C6BCB /* Sphere.cpp in Sources */,
-				CDCE09E0155220EB0013A3E3 /* Tracer.cpp in Sources */,
 				CD3C114B1552B27100961F4D /* Camera.cpp in Sources */,
 				CD3C11761552EA9200961F4D /* Scene.cpp in Sources */,
 				CD3C117A15544E2800961F4D /* Color.cpp in Sources */,
@@ -444,6 +445,9 @@
 				CD3C118B1555122E00961F4D /* InMemoryFilm.cpp in Sources */,
 				CD3C118E155514E900961F4D /* OrthographicCamera.cpp in Sources */,
 				CD3C11911555156B00961F4D /* ProjectionCamera.cpp in Sources */,
+				CD3C119A155535A900961F4D /* Matrix3D.cpp in Sources */,
+				CD3C119D15559A6D00961F4D /* Film.cpp in Sources */,
+				CD3C11A115559F8A00961F4D /* PinholeCamera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +463,6 @@
 				CDA8216E1551AE2F002C6BCB /* Sphere.cpp in Sources */,
 				CDA821701551AE8C002C6BCB /* SphereTests.cpp in Sources */,
 				CDA821721551AEB6002C6BCB /* Vector3DTests.cpp in Sources */,
-				CDCE09E1155220EB0013A3E3 /* Tracer.cpp in Sources */,
 				CD3C114C1552B27100961F4D /* Camera.cpp in Sources */,
 				CD3C11501552CE6700961F4D /* PlaneTests.cpp in Sources */,
 				CD3C11771552EA9200961F4D /* Scene.cpp in Sources */,
@@ -472,6 +475,9 @@
 				CD3C118F155514E900961F4D /* OrthographicCamera.cpp in Sources */,
 				CD3C11921555156B00961F4D /* ProjectionCamera.cpp in Sources */,
 				CD3C119815552A4300961F4D /* RegularSamplerTests.cpp in Sources */,
+				CD3C119B155535A900961F4D /* Matrix3D.cpp in Sources */,
+				CD3C119E15559A6D00961F4D /* Film.cpp in Sources */,
+				CD3C11A215559F8A00961F4D /* PinholeCamera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +603,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/tests/3rdparty\"",
 				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/tests\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../tools\" \"$(SRCROOT)/tests/3rdparty\"";
 			};
@@ -611,6 +618,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/tests/3rdparty\"",
 				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/tests\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../tools\" \"$(SRCROOT)/tests/3rdparty\"";
 			};

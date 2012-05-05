@@ -6,10 +6,16 @@
 class OrthographicCamera : public ProjectionCamera {
 public:
 	// Constructor
-	OrthographicCamera(std::shared_ptr<Film> film);
+	OrthographicCamera(std::shared_ptr<Film> film,
+					   float nearPlaneDistance, float farPlaneDistance,
+					   Vector3D& lookDirection, Vector3D& upDirection,
+					   Point3D& position, float width);
 	
-	// Public methods
-	virtual Ray3D generateRay(const Sample& sample) const override;
+protected:
+	virtual Matrix3D getProjectionMatrix() const override;
+	
+private:
+	float _width;
 };
 
 #endif

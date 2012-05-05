@@ -1,26 +1,35 @@
-#include "Tests.h"
+#include <igloo/igloo_alt.h>
+using namespace igloo;
+
 #include "RegularSampler.h"
 
-TEST(RegularSamplerTest, GetNextSample) {
-	auto s = RegularSampler(0, 2, 0, 2);
-	
-	Sample sample;
-	
-	EXPECT_TRUE(s.getNextSample(sample));
-	EXPECT_EQ(0, sample.getImageX());
-	EXPECT_EQ(0, sample.getImageY());
-	
-	EXPECT_TRUE(s.getNextSample(sample));
-	EXPECT_EQ(1, sample.getImageX());
-	EXPECT_EQ(0, sample.getImageY());
-	
-	EXPECT_TRUE(s.getNextSample(sample));
-	EXPECT_EQ(0, sample.getImageX());
-	EXPECT_EQ(1, sample.getImageY());
-	
-	EXPECT_TRUE(s.getNextSample(sample));
-	EXPECT_EQ(1, sample.getImageX());
-	EXPECT_EQ(1, sample.getImageY());
-	
-	EXPECT_FALSE(s.getNextSample(sample));
-}
+Describe(RegularSamplerClass)
+{
+	Describe(GetNextSample)
+	{
+		It(Returns_the_correct_samples)
+		{
+			auto s = RegularSampler(0, 2, 0, 2);
+			
+			Sample sample;
+			
+			Assert::That(s.getNextSample(sample), IsTrue());
+			Assert::That(0, Equals(sample.getImageX()));
+			Assert::That(0, Equals(sample.getImageY()));
+			
+			Assert::That(s.getNextSample(sample), IsTrue());
+			Assert::That(1, Equals(sample.getImageX()));
+			Assert::That(0, Equals(sample.getImageY()));
+			
+			Assert::That(s.getNextSample(sample), IsTrue());
+			Assert::That(0, Equals(sample.getImageX()));
+			Assert::That(1, Equals(sample.getImageY()));
+			
+			Assert::That(s.getNextSample(sample), IsTrue());
+			Assert::That(1, Equals(sample.getImageX()));
+			Assert::That(1, Equals(sample.getImageY()));
+			
+			Assert::That(s.getNextSample(sample), IsFalse());
+		}
+	};
+};

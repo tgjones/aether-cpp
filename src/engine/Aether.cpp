@@ -1,13 +1,16 @@
 #include "Aether.h"
 #include "InMemoryFilm.h"
-#include "OrthographicCamera.h"
+#include "PinholeCamera.h"
 #include "RegularSampler.h"
 #include "Sphere.h"
 #include "Scene.h"
 
 std::vector<Color> aetherRenderScene(int width, int height) {
 	auto film = std::make_shared<InMemoryFilm>(width, height);
-	auto camera = std::make_shared<OrthographicCamera>(film);
+	auto camera = std::make_shared<PinholeCamera>(film,
+												  Point3D(0, 0, 25),
+												  Point3D(-2, 5, 8),
+												  Point3D(2, -5, 8));
 	
 	auto sampler = std::make_shared<RegularSampler>(0, width, 0, height);
 	

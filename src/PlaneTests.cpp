@@ -1,27 +1,38 @@
-#include "Tests.h"
+#include <igloo/igloo_alt.h>
+using namespace igloo;
+
 #include "Plane.h"
 
-TEST(PlaneTests, Constructor) {
-	auto point = Point3D(1, 2, 3);
-	auto normal = Normal3D(0, 1, 0);
-	auto plane = Plane(point, normal);
-	EXPECT_EQ(Point3D(1, 2, 3), plane.getPoint());
-	EXPECT_EQ(Normal3D(0, 1, 0), plane.getNormal());
-}
-
-TEST(PlaneTests, HitSuccess) {
-	auto plane = Plane(Point3D(0, 0, 0), Normal3D(0, 1, 0));
-	auto ray = Ray3D(Point3D(0, 4, 0), Vector3D::Down);
-	double tmin;
-	ShadeRec sr;
-	EXPECT_TRUE(plane.hit(ray, tmin, sr));
-	EXPECT_EQ(4.0, tmin);
-}
-
-TEST(PlaneTests, HitMiss) {
-	auto plane = Plane(Point3D(0, 0, 0), Normal3D(0, 1, 0));
-	auto ray = Ray3D(Point3D(0, 1, 0), Vector3D::Forward);
-	double tmin;
-	ShadeRec sr;
-	EXPECT_FALSE(plane.hit(ray, tmin, sr));
-}
+Describe(PlaneClass)
+{
+	It(Has_a_constructor_that_takes_point_and_normal)
+	{
+		auto point = Point3D(1, 2, 3);
+		auto normal = Normal3D(0, 1, 0);
+		auto plane = Plane(point, normal);
+		Assert::That(Point3D(1, 2, 3), Equals(plane.getPoint()));
+		Assert::That(Normal3D(0, 1, 0), Equals(plane.getNormal()));
+	}
+	
+	Describe(HitMethod)
+	{
+		It(Returns_true_when_ray_hits)
+		{
+			auto plane = Plane(Point3D(0, 0, 0), Normal3D(0, 1, 0));
+			auto ray = Ray3D(Point3D(0, 4, 0), Vector3D::Down);
+			double tmin;
+			ShadeRec sr;
+			Assert::That(plane.hit(ray, tmin, sr), IsTrue());
+			Assert::That(4.0, Equals(tmin));
+		}
+		
+		It(Returns_false_when_ray_misses)
+		{
+			auto plane = Plane(Point3D(0, 0, 0), Normal3D(0, 1, 0));
+			auto ray = Ray3D(Point3D(0, 1, 0), Vector3D::Forward);
+			double tmin;
+			ShadeRec sr;
+			Assert::That(plane.hit(ray, tmin, sr), IsFalse());
+		}
+	};
+};
