@@ -9,6 +9,11 @@ set (CMAKE_CXX_COMPILER clang++)
 add_definitions (-std=c++11)
 add_definitions (-stdlib=libc++)
 
+set (AETHER_SOURCE_DIR ${CMAKE_SOURCE_DIR}/src)
+
+set (EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set (LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+
 # Recurse into the "src" and "tests" subdirectories. This does not actually 
 # cause another cmake executable to run. The same process will walk through 
 # the project's entire directory structure. 

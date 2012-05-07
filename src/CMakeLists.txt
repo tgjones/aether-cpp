@@ -36,10 +36,11 @@ set (Aether_SOURCES
 
 # Add library called "aether" - this will be used by both the main executable
 # and the tests
-add_library (libaether ${Aether_SOURCES})
+add_library (aether ${Aether_SOURCES})
 
 # Add executable called "aether" that uses the aether library
-add_executable (aether main.cpp)
+add_executable (aether-bin main.cpp)
+set_target_properties (aether-bin PROPERTIES OUTPUT_NAME aether)
 
-target_link_libraries (aether libaether)
-target_link_libraries (aether c++)
+target_link_libraries (aether-bin aether)
+target_link_libraries (aether-bin c++)

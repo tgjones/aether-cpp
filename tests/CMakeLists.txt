@@ -1,8 +1,8 @@
 # Allow test cpp files to #include source files directly
-add_definitions (-iquote../src)
+add_definitions (-iquote${AETHER_SOURCE_DIR})
 
 # Allow igloo testing framework to locate its own files with <igloo/...>
-add_definitions (-I.)
+add_definitions (-I${CMAKE_CURRENT_SOURCE_DIR})
 
 set (Test_SOURCES
   PlaneTests.cpp
@@ -18,7 +18,7 @@ add_executable (aether_tests
   ${Aether_SOURCES}
   ${Test_SOURCES})
 
-target_link_libraries (aether_tests libaether)
+target_link_libraries (aether_tests aether)
 target_link_libraries (aether_tests c++)
 
 # Add test
