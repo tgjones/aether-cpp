@@ -1,8 +1,8 @@
 #include <igloo/igloo_alt.h>
 using namespace igloo;
 
-#include "Math.h"
-#include "Sphere.h"
+#include "Math/Math.h"
+#include "Shapes/Sphere.h"
 
 Describe(SphereClass)
 {

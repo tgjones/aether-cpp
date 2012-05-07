@@ -2,9 +2,9 @@
 #define Aether_Camera_h
 
 #include <memory>
-#include "Math.h"
-#include "Film.h"
-#include "Sample.h"
+#include "../Math/Math.h"
+#include "../Film.h"
+#include "../Sampling/Sample.h"
 
 class Camera {
 public:

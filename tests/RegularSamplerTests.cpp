@@ -1,7 +1,7 @@
 #include <igloo/igloo_alt.h>
 using namespace igloo;
 
-#include "RegularSampler.h"
+#include "Sampling/RegularSampler.h"
 
 Describe(RegularSamplerClass)
 {

@@ -1,9 +1,9 @@
 #ifndef Aether_Scene_h
 #define Aether_Scene_h
 
-#include "Camera.h"
-#include "Sampler.h"
-#include "Shape.h"
+#include "Cameras/Camera.h"
+#include "Sampling/Sampler.h"
+#include "Shapes/Shape.h"
 
 class Scene {
 public:

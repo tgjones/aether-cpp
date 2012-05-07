@@ -1,8 +1,8 @@
 #ifndef Aether_Film_h
 #define Aether_Film_h
 
-#include "Color.h"
-#include "Sample.h"
+#include "Math/Color.h"
+#include "Sampling/Sample.h"
 
 class Film {
 public:

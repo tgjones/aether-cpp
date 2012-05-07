@@ -1,16 +1,8 @@
-//
-//  Shape.h
-//  Aether
-//
-//  Created by Tim Jones on 02/05/2012.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #ifndef Aether_Shape_h
 #define Aether_Shape_h
 
-#include "math.h"
-#include "shaderec.h"
+#include "../Math/Math.h"
+#include "../ShadeRec.h"
 
 class Shape {
 public:

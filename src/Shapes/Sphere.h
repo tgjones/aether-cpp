@@ -1,16 +1,8 @@
-//
-//  Sphere.h
-//  Aether
-//
-//  Created by Tim Jones on 02/05/2012.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #ifndef Aether_Sphere_h
 #define Aether_Sphere_h
 
-#include "shape.h"
-#include "math.h"
+#include "Shape.h"
+#include "../Math/Math.h"
 
 class Sphere : public Shape {
 public:

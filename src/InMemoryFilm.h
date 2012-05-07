@@ -3,7 +3,7 @@
 
 #include <vector>
 #include "Film.h"
-#include "Color.h"
+#include "Math/Color.h"
 
 class InMemoryFilm : public Film {
 public:

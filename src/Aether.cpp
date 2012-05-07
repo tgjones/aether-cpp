@@ -1,8 +1,8 @@
 #include "Aether.h"
 #include "InMemoryFilm.h"
-#include "PinholeCamera.h"
-#include "RegularSampler.h"
-#include "Sphere.h"
+#include "Cameras/PinholeCamera.h"
+#include "Sampling/RegularSampler.h"
+#include "Shapes/Sphere.h"
 #include "Scene.h"
 
 std::vector<Color> aetherRenderScene(int width, int height) {

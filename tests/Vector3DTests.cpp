@@ -1,7 +1,7 @@
 #include <igloo/igloo_alt.h>
 using namespace igloo;
 
-#include "Vector3D.h"
+#include "Math/Vector3D.h"
 
 Describe(Vector3DClass)
 {

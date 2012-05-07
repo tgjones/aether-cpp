@@ -4,8 +4,13 @@
 cmake_minimum_required (VERSION 2.6) 
 project (AETHER) 
 
-# Recurse into the "engine" and "tests" subdirectories. This does not actually 
+set (CMAKE_CXX_COMPILER clang++)
+
+add_definitions (-std=c++11)
+add_definitions (-stdlib=libc++)
+
+# Recurse into the "src" and "tests" subdirectories. This does not actually 
 # cause another cmake executable to run. The same process will walk through 
 # the project's entire directory structure. 
-add_subdirectory (engine) 
+add_subdirectory (src) 
 add_subdirectory (tests)

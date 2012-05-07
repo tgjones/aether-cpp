@@ -1,7 +1,7 @@
 #include <igloo/igloo_alt.h>
 using namespace igloo;
 
-#include "Plane.h"
+#include "Shapes/Plane.h"
 
 Describe(PlaneClass)
 {
