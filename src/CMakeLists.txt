@@ -1,3 +1,6 @@
+add_definitions (-I"${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/png++-0.2.5")
+add_definitions (-I"${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/libpng-1.2.49")
+
 # Create variables for each set of source files
 set (Cameras_SOURCES
   Cameras/Camera.cpp
@@ -43,4 +46,6 @@ add_executable (aether-bin main.cpp)
 set_target_properties (aether-bin PROPERTIES OUTPUT_NAME aether)
 
 target_link_libraries (aether-bin aether)
+target_link_libraries (aether-bin z)
+target_link_libraries (aether-bin png)
 target_link_libraries (aether-bin c++)

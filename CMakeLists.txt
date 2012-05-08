@@ -9,7 +9,7 @@ set (LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 # Build zlib and libpng
 add_subdirectory (src/3rdParty/zlib-1.2.7)
-add_subdirectory (src/3rdParty/libpng-1.5.10)
+add_subdirectory (src/3rdParty/libpng-1.2.49)
 
 set (CMAKE_CXX_COMPILER clang++)
 
