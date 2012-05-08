@@ -1,17 +1,22 @@
 #ifndef Aether_Matrix3D_h
 #define Aether_Matrix3D_h
 
+#include <iostream>
 #include "Point3D.h"
 #include "Vector3D.h"
 
 class Matrix3D {
 public:
 	// Static methods
-	static Matrix3D createLookAt(const Point3D& cameraPosition,
-								 const Vector3D& lookDirection,
-								 const Vector3D& cameraUpVector);
-	static Matrix3D createOrthographic(float width, float height,
-									   float zNearPlane, float zFarPlane);
+	static Matrix3D createLookAt(
+	  const Point3D& cameraPosition,
+		const Vector3D& lookDirection,
+	  const Vector3D& cameraUpVector);
+	  
+	static Matrix3D createOrthographic(
+	  float width, float height,
+	  float nearZ, float farZ);
+	  
 	static Matrix3D createScale(float xScale, float yScale, float zScale);
 	static Matrix3D createTranslation(float xPosition, float yPosition, float zPosition);
 	
@@ -19,7 +24,7 @@ public:
 	Matrix3D(float m00, float m01, float m02, float m03,
 			 float m10, float m11, float m12, float m13,
 			 float m20, float m21, float m22, float m23,
-			 float m30, float m31, float m32, float m33);
+       float m30, float m31, float m32, float m33);
 	Matrix3D();
 	
 	// Public methods
@@ -28,6 +33,10 @@ public:
 	
 	// Operators
 	Matrix3D operator*(const Matrix3D& rhs) const;
+  float operator()(const int i, const int j) const;
+  
+  // Friends
+  friend std::ostream& operator<<(std::ostream& stm, const Matrix3D& m);
 	
 private:
 	// Private data

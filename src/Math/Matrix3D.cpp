@@ -1,5 +1,7 @@
 #include "Matrix3D.h"
 
+#include <iomanip>
+
 Matrix3D
 Matrix3D::createLookAt(const Point3D& cameraPosition,
 					   const Vector3D& lookDirection,
@@ -20,29 +22,30 @@ Matrix3D::createLookAt(const Point3D& cameraPosition,
 }
 
 Matrix3D
-Matrix3D::createOrthographic(float width, float height,
-							 float zNearPlane, float zFarPlane)
+Matrix3D::createOrthographic(float width, float height, float nearZ, float farZ)
 {
-	return createScale(2.0f / width, 2.0f / height, 1.0f / (zNearPlane - zFarPlane))
-		* createTranslation(0, 0, zNearPlane / (zNearPlane - zFarPlane));
+	return createScale(2.0f / width, 2.0f / height, 1.0f / (nearZ - farZ))
+		* createTranslation(0, 0, nearZ / (nearZ - farZ));
 }
 
 Matrix3D
 Matrix3D::createScale(float xScale, float yScale, float zScale)
 {
-	return Matrix3D(xScale, 0, 0, 0,
-					0, yScale, 0, 0,
-					0, 0, zScale, 0,
-					0, 0, 0, 1);
+	return Matrix3D(
+	  xScale, 0, 0, 0,
+		0, yScale, 0, 0,
+		0, 0, zScale, 0,
+		0, 0, 0, 1);
 }
 
 Matrix3D
 Matrix3D::createTranslation(float xPosition, float yPosition, float zPosition)
 {
-	return Matrix3D(1, 0, 0, 0,
-					0, 1, 0, 0,
-					0, 0, 1, 0,
-					xPosition, yPosition, zPosition, 1);
+	return Matrix3D(
+	  1, 0, 0, 0,
+		0, 1, 0, 0,
+  	0, 0, 1, 0,
+  	xPosition, yPosition, zPosition, 1);
 }
 
 Matrix3D::Matrix3D(float m00, float m01, float m02, float m03,
@@ -107,4 +110,26 @@ Matrix3D::operator*(const Matrix3D& rhs) const
 				m[i][2] * rhs.m[2][j] +
 				m[i][3] * rhs.m[3][j];
 	return r;
+}
+
+float
+Matrix3D::operator()(const int i, const int j) const
+{
+  return m[i][j];
+}	
+
+std::ostream&
+operator<<(std::ostream& stm, const Matrix3D& m)
+{
+  stm << std::endl;
+  for (int i = 0; i < 4; i++)
+  {
+    for (int j = 0; j < 4; j++)
+    {
+      stm << std::setw(8) << std::setprecision(3);
+      stm << m.m[i][j];
+    }
+    stm << std::endl;
+  }
+  return stm;
 }

@@ -5,6 +5,7 @@ add_definitions (-iquote${AETHER_SOURCE_DIR})
 add_definitions (-I${CMAKE_CURRENT_SOURCE_DIR})
 
 set (Test_SOURCES
+  Matrix3DTests.cpp
   PlaneTests.cpp
   RegularSamplerTests.cpp
   SphereTests.cpp
