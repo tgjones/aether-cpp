@@ -1,5 +1,11 @@
 #include "Math.h"
 
+Point3D::Point3D(const Point4D& p)
+  : x(p.x / p.w), y(p.y / p.w), z(p.z / p.w)
+{
+
+}
+
 Vector3D
 Point3D::operator-(const Point3D& p) const {
 	return Vector3D(x - p.x, y - p.y, z - p.z);

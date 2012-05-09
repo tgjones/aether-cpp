@@ -81,7 +81,7 @@ Matrix3D::transform(const Vector3D &v) const
 }
 
 Point3D
-Matrix3D::transform(const Point3D &p) const
+Matrix3D::transform(const Point3D& p) const
 {
 	float x = p.x;
 	float y = p.y;
@@ -97,6 +97,22 @@ Matrix3D::transform(const Point3D &p) const
 	result.z /= w;
 	
 	return result;
+}
+
+Point4D
+Matrix3D::transform(const Point4D& p) const
+{
+  float x = p.x;
+  float y = p.y;
+  float z = p.z;
+  float w = p.w;
+	
+  Point4D result;
+	result.x = ((x * m[0][0]) + (y * m[1][0])) + (z * m[2][0]) + (w * m[3][0]);
+	result.y = ((x * m[0][1]) + (y * m[1][1])) + (z * m[2][1]) + (w * m[3][1]);
+	result.z = ((x * m[0][2]) + (y * m[1][2])) + (z * m[2][2]) + (w * m[3][2]);
+	result.w = ((x * m[0][3]) + (y * m[1][3])) + (z * m[2][3]) + (w * m[3][3]);
+  return result;
 }
 
 Matrix3D

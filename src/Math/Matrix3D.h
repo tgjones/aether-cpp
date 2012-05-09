@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Point3D.h"
+#include "Point4D.h"
 #include "Vector3D.h"
 
 class Matrix3D {
@@ -19,6 +20,8 @@ public:
 	  
 	static Matrix3D createScale(float xScale, float yScale, float zScale);
 	static Matrix3D createTranslation(float xPosition, float yPosition, float zPosition);
+
+  static Matrix3D invert(const Matrix3D& m);
 	
 	// Constructors
 	Matrix3D(float m00, float m01, float m02, float m03,
@@ -30,6 +33,7 @@ public:
 	// Public methods
 	Vector3D transform(const Vector3D& v) const;
 	Point3D transform(const Point3D& p) const;
+  Point4D transform(const Point4D& p) const;
 	
 	// Operators
 	Matrix3D operator*(const Matrix3D& rhs) const;

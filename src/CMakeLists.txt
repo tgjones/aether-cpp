@@ -13,7 +13,9 @@ set (Math_SOURCES
   Math/Matrix3D.cpp
   Math/Normal3D.cpp
   Math/Point3D.cpp
-  Math/Vector3D.cpp)
+  Math/Point4D.cpp
+  Math/Vector3D.cpp
+  Math/Viewport3D.cpp)
 
 set (Sampling_SOURCES
   Sampling/RegularSampler.cpp
