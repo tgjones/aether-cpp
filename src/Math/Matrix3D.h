@@ -2,12 +2,17 @@
 #define Aether_Matrix3D_h
 
 #include <iostream>
+#include "Matrix.h"
 #include "Point3D.h"
 #include "Point4D.h"
 #include "Vector3D.h"
 
-class Matrix3D {
+class Matrix3D : public Matrix<Matrix3D, 4>
+{
 public:
+	// Static constants
+	static const Matrix3D Identity;
+	
 	// Static methods
 	static Matrix3D createLookAt(
 	  const Point3D& cameraPosition,
@@ -20,8 +25,6 @@ public:
 	  
 	static Matrix3D createScale(float xScale, float yScale, float zScale);
 	static Matrix3D createTranslation(float xPosition, float yPosition, float zPosition);
-
-  static Matrix3D invert(const Matrix3D& m);
 	
 	// Constructors
 	Matrix3D(float m00, float m01, float m02, float m03,

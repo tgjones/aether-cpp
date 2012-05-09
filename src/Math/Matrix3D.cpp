@@ -2,6 +2,13 @@
 
 #include <iomanip>
 
+const Matrix3D
+Matrix3D::Identity(
+	1, 0, 0, 0,
+	0, 1, 0, 0,
+	0, 0, 1, 0,
+	0, 0, 0, 1);
+
 Matrix3D
 Matrix3D::createLookAt(const Point3D& cameraPosition,
 					   const Vector3D& lookDirection,
