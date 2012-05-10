@@ -1,23 +1,3 @@
-template <typename Derived, unsigned Order>
-class MatrixDeterminantHelper
-{
-public:
-  static double calculateDeterminant(Derived mat)
-  {
-    return 1;
-  }
-};
-
-template <typename Derived>
-class MatrixDeterminantHelper<Derived, 1>
-{
-public:
-  static double calculateDeterminant(Derived mat)
-  {
-    return mat(0, 0);
-  }
-};
-
 template <typename Derived, int Order>
 Derived
 MatrixBase<Derived, Order>::identity()
@@ -29,22 +9,89 @@ MatrixBase<Derived, Order>::identity()
 	return r;
 }
 
+template <typename Derived, unsigned Order>
+MatrixBase<Derived, Order - 1> getMinor(MatrixBase<Derived, Order> src, int row, int col)
+{
+	// Keep track of which col and row are being copied to dest
+	int colCount = 0, rowCount = 0;
+	
+	MatrixBase<Derived, Order - 1> dest;
+	for (int i = 0; i < Order; i++)
+	{
+		if (i != row)
+		{
+			colCount = 0;
+			for (int j = 0; j < Order; j++)
+			{
+				if (j != col)
+				{
+					dest(rowCount, colCount) = src(i, j);
+					colCount++;
+				}
+			}
+			rowCount++;
+		}
+	}
+	
+	return dest;
+}
+
+template <typename Derived, unsigned Order>
+class MatrixDeterminantHelper
+{
+public:
+  static double calculateDeterminant(MatrixBase<Derived, Order> mat)
+  {
+		// The determinant value
+		float det = 0.0f;
+		
+		// Allocate the cofactor matrix
+		Matrix<Order - 1> minor;
+		
+		for (int i = 0; i < Order; i++)
+		{
+			// Get minor of element (0, i)
+			auto minor = getMinor<Derived, Order>(mat, 0, i);
+			
+			// If this is an odd-numbered row, negate the value.
+			float factor = (i % 2 == 1) ? -1.0f : 1.0f;
+			
+			// Recursion!
+			det += factor * mat(0, i) * MatrixDeterminantHelper<Derived, Order - 1>::calculateDeterminant(minor);
+		}
+		
+		return det;
+  }
+};
+
+// Template specialization
+template <typename Derived>
+class MatrixDeterminantHelper<Derived, 1>
+{
+public:
+  static double calculateDeterminant(MatrixBase<Derived, 1> mat)
+  {
+    return mat(0, 0);
+  }
+};
+
 template <typename Derived, int Order>
 Derived
 MatrixBase<Derived, Order>::invert(const Derived& m)
 {
 	// Get the determinant of a
 	float det = 1.0f / MatrixDeterminantHelper<Derived, Order>::calculateDeterminant(m);
-	return Derived();
-}
-
-// calculate the cofactor of element (row,col)
-template <typename Derived, int Order>
-Derived
-MatrixBase<Derived, Order>::getMinor(const Derived& src, int row, int col)
-{
-  // Indicate which col and row is being copied to dest
- return Derived();
+	
+	Derived result;
+  for (int j = 0; j < Order; j++)
+		for (int i = 0; i < Order; i++)
+		{
+			auto minor = getMinor<Derived, Order>(m, j, i);
+			result(i, j) = det * MatrixDeterminantHelper<Derived, Order - 1>::calculateDeterminant(minor);
+			if ((i + j) % 2 == 1)
+				result(i, j) = -result(i, j);
+		}
+	return result;
 }
 
 template <typename Derived, int Order>

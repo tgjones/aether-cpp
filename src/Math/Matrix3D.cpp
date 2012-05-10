@@ -11,13 +11,11 @@ Matrix3D::createLookAt(const Point3D& cameraPosition,
 	Vector3D right = Vector3D::normalize(Vector3D::cross(cameraUpVector, dir));
 	Vector3D newUp = Vector3D::cross(dir, right);
 	
-	return Matrix3D(right.x, newUp.x, dir.x, 0.0f,
-					right.y, newUp.y, dir.y, 0.0f,
-					right.z, newUp.z, dir.z, 0.0f,
-					-dot(right, position),
-					-dot(newUp, position),
-					-dot(dir, position),
-					1.0f);
+	return Matrix3D(
+		right.x, newUp.x, dir.x, 0.0f,
+		right.y, newUp.y, dir.y, 0.0f,
+		right.z, newUp.z, dir.z, 0.0f,
+		-dot(right, position), -dot(newUp, position), -dot(dir, position), 1.0f);
 }
 
 Matrix3D

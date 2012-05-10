@@ -29,10 +29,6 @@ protected:
 	// Protected methods
 	float at(const int i, const int j) const;
 	float& at(const int i, const int j);
-	
-private:
-  // Private methods
-  Derived getMinor(const Derived& src, int row, int col);
 };
 
 template <int Order>
