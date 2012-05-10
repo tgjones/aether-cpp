@@ -19,7 +19,7 @@ ProjectionCamera::generateRay(const Sample &sample) const
 {
 	auto viewport = Viewport3D(0, 0, _film->getXRes(), _film->getYRes());
 	return viewport.createPickRay(sample.getImageX(), sample.getImageY(),
-		getViewMatrix(), getProjectionMatrix(), Matrix3D::Identity);
+		getViewMatrix(), getProjectionMatrix(), Matrix3D::identity());
 }
 
 Matrix3D
