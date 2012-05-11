@@ -103,6 +103,18 @@ MatrixBase<Derived, Order>::MatrixBase()
 }
 
 template <typename Derived, int Order>
+bool
+MatrixBase<Derived, Order>::approximatelyEquals(const Derived &rhs) const
+{
+  const float EPSILON = 0.0001f;
+  for (int i = 0; i < Order; i++)
+    for (int j = 0; j < Order; j++)
+      if (fabs(at(i, j) - rhs(i, j)) > EPSILON)
+        return false;
+  return true;
+}	
+
+template <typename Derived, int Order>
 Derived
 MatrixBase<Derived, Order>::operator*(const Derived& rhs) const
 {
@@ -112,6 +124,17 @@ MatrixBase<Derived, Order>::operator*(const Derived& rhs) const
 			for (int k = 0; k < Order; k++)
 				r(i, j) += at(i, k) * rhs(k, j);
 	return r;
+}
+
+template <typename Derived, int Order>
+bool
+MatrixBase<Derived, Order>::operator==(const Derived& rhs) const
+{
+  for (int i = 0; i < Order; i++)
+    for (int j = 0; j < Order; j++)
+      if (at(i, j) != rhs(i, j))
+        return false;
+  return true;
 }
 
 template <typename Derived, int Order>

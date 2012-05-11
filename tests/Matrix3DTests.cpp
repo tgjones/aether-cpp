@@ -54,4 +54,23 @@ Describe(Matrix3DClass)
     
     Assert::That(actual, Is().Fulfilling(IsCorrectMatrix(expected)));
   }
+
+  It(Can_invert_matrices)
+  {
+    auto original = Matrix3D(
+      3.0f, 0.0f, 2.0f, -1.0f,
+      1.0f, 2.0f, 0.0f, -2.0f,
+      4.0f, 0.0f, 6.0f, -3.0f,
+      5.0f, 0.0f, 2.0f, 0.0f);
+    auto actual = Matrix3D::invert(original);
+    
+    auto expected = inverse(cml::matrix44f_r(
+      3.0f, 0.0f, 2.0f, -1.0f,
+      1.0f, 2.0f, 0.0f, -2.0f,
+      4.0f, 0.0f, 6.0f, -3.0f,
+      5.0f, 0.0f, 2.0f, 0.0f));
+    
+    Assert::That((original * actual).approximatelyEquals(Matrix3D::identity()), Is().True());
+    Assert::That(actual, Is().Fulfilling(IsCorrectMatrix(expected)));
+  }
 };

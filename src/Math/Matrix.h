@@ -12,13 +12,15 @@ public:
 	// Constructors
 	template<class ...T>
 	MatrixBase(float first, T... next)
-		: m { first, next... }
-	{ }
-	
+		: m { first, next... } { }
 	MatrixBase();
+
+  // Public methods
+  bool approximatelyEquals(const Derived &rhs) const;
 	
 	// Operators
 	Derived operator*(const Derived& rhs) const;
+  bool operator==(const Derived& rhs) const;
 	float operator()(const int i, const int j) const;
 	float& operator()(const int i, const int j);
 	
